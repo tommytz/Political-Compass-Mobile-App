@@ -13,12 +13,12 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
     }
-    val play : CardView = findViewById(R.id.startQuiz)
-    val button : Button = findViewById(R.id.quizButton)
+//    val play : CardView = findViewById(R.id.startQuiz)
+//    val button : Button = findViewById(R.id.quizButton)
 //    button.setOnClickListener{}
 
-    fun startQuiz(view : View){
-        val quizActivityIntent: Intent = Intent(this@MainActivity, QuizActivity::class.java)
-        startActivity(quizActivityIntent)
-    }
+//    fun startQuiz(view : View){
+//        val quizActivityIntent: Intent = Intent(this@MainActivity, QuizActivity::class.java)
+//        startActivity(quizActivityIntent)
+//    }
 }
