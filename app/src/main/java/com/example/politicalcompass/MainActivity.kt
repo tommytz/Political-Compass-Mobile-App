@@ -15,8 +15,7 @@ class MainActivity : AppCompatActivity() {
     }
     val play : CardView = findViewById(R.id.startQuiz)
     val button : Button = findViewById(R.id.quizButton)
-    button.setOnClickListener{
-    }
+//    button.setOnClickListener{}
 
     fun startQuiz(view : View){
         val quizActivityIntent: Intent = Intent(this@MainActivity, QuizActivity::class.java)
