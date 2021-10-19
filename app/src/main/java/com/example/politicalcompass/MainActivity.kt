@@ -12,10 +12,15 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        val button : Button = findViewById(R.id.quizButton)
+        button.setOnClickListener {
+            setContentView(R.layout.quiz_activity)
+        }
+
     }
 //    val play : CardView = findViewById(R.id.startQuiz)
-//    val button : Button = findViewById(R.id.quizButton)
-//    button.setOnClickListener{}
+
 
 //    fun startQuiz(view : View){
 //        val quizActivityIntent: Intent = Intent(this@MainActivity, QuizActivity::class.java)
