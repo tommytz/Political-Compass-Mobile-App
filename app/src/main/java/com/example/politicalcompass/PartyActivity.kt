@@ -12,10 +12,10 @@ class PartyActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.party_activity)
 
-        val menu : AutoCompleteTextView = findViewById(R.id.menu)
-        val items = listOf("Option 1", "Option 2", "Option 3", "Option 4")
-        val adapter = ArrayAdapter(this, R.layout.list_item, items)
-        menu.setAdapter(adapter)
+        val partyMenu : AutoCompleteTextView = findViewById(R.id.menu)
+        val parties = resources.getStringArray(R.array.parties)
+        val adapter = ArrayAdapter(this, R.layout.list_item, parties)
+        partyMenu.setAdapter(adapter)
 
 
     }

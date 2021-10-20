@@ -17,4 +17,12 @@
     <string name="test1">environment pressed</string>
     <string name="test2">housing pressed</string>
 
+    <string-array name="parties">
+        <item>Labour Party</item>
+        <item>National Party</item>
+        <item>Green Party</item>
+        <item>ACT</item>
+        <item>Māori Party</item>
+    </string-array>
+
 </resources>
