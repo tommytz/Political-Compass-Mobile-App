@@ -13,57 +13,67 @@
         android:text="@string/landingTitle"
         android:textAlignment="center"
         android:textSize="40sp"
-        tools:layout_editor_absoluteX="73dp"
-        tools:layout_editor_absoluteY="163dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.092" />
 
     <Button
         android:id="@+id/quizButton"
         android:layout_width="363dp"
         android:layout_height="52dp"
-        android:layout_marginBottom="29dp"
+        android:layout_marginBottom="64dp"
         android:background="#4CAF50"
         android:text="Take the Quiz"
         app:layout_constraintBottom_toTopOf="@+id/partyButton"
         app:layout_constraintEnd_toEndOf="@+id/partyButton"
-        app:layout_constraintStart_toStartOf="@+id/partyButton" />
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/partyButton"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
 
     <Button
         android:id="@+id/partyButton"
         android:layout_width="361dp"
         android:layout_height="54dp"
-        android:layout_marginEnd="2dp"
-        android:layout_marginBottom="29dp"
+        android:layout_marginBottom="52dp"
         android:background="@drawable/my_button"
         android:text="Party Info"
         app:layout_constraintBottom_toTopOf="@+id/policyButton"
         app:layout_constraintEnd_toEndOf="@+id/policyButton"
-        app:layout_constraintEnd_toStartOf="@+id/guideline3" />
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+        app:layout_constraintStart_toStartOf="@+id/policyButton" />
 
     <Button
         android:id="@+id/policyButton"
         android:layout_width="363dp"
         android:layout_height="0dp"
-        android:layout_marginBottom="29dp"
+        android:layout_marginBottom="32dp"
         android:background="@drawable/my_button"
         android:text="Policy Info"
         app:layout_constraintBottom_toTopOf="@+id/electorateButton"
         app:layout_constraintEnd_toEndOf="@+id/electorateButton"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/electorateButton" />
 
     <Button
         android:id="@+id/electorateButton"
         android:layout_width="363dp"
         android:layout_height="51dp"
+        android:layout_marginBottom="152dp"
         android:background="@drawable/my_button"
         android:text="Electorate Info"
-        tools:layout_editor_absoluteY="506dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="23dp" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_begin="362dp" />
+        app:layout_constraintGuide_begin="386dp" />
 
 
     <!--    <TextView-->
