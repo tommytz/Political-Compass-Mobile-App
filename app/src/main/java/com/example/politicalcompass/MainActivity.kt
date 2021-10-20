@@ -3,9 +3,7 @@ package com.example.politicalcompass
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
 import android.widget.Button
-import androidx.cardview.widget.CardView
 
 
 class MainActivity : AppCompatActivity() {
@@ -13,10 +11,18 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val button : Button = findViewById(R.id.quizButton)
-        button.setOnClickListener {
-            setContentView(R.layout.quiz_activity)
+        val quizButton : Button = findViewById(R.id.quizButton)
+        quizButton.setOnClickListener {
+            val intent = Intent(this, QuizActivity::class.java)
+            startActivity(intent)
         }
+
+        val policyButton : Button = findViewById(R.id.policyButton)
+        policyButton.setOnClickListener {
+            val intent = Intent(this, PolicyActivity::class.java)
+            startActivity(intent)
+        }
+
 
     }
 //    val play : CardView = findViewById(R.id.startQuiz)
