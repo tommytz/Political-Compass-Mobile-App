@@ -2,6 +2,11 @@
     <string name="app_name">PoliticalCompass</string>
     <string name="landingTitle">Political Compass</string>
     <string name="firstQuestion">Do you like plants?</string>
-    <string name="secondQuestion">Do you like Orange?</string>
-    <string name="thirdQuestion">Would you remember to release policy?</string>
+    <string-array name="parties">
+        <item>Labour Party</item>
+        <item>National Party</item>
+        <item>Green Party</item>
+        <item>ACT</item>
+        <item>Māori Party</item>
+    </string-array>
 </resources>

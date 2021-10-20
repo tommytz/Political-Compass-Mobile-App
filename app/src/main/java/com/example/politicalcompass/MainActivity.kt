@@ -18,6 +18,11 @@ class MainActivity : AppCompatActivity() {
             setContentView(R.layout.quiz_activity)
         }
 
+        val button2 : Button = findViewById(R.id.partyButton)
+        button2.setOnClickListener {
+            setContentView(R.layout.party_activity)
+        }
+
     }
 //    val play : CardView = findViewById(R.id.startQuiz)
 
