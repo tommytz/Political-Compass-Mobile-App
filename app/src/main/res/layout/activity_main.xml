@@ -11,50 +11,46 @@
         android:id="@+id/electorateButton"
         android:layout_width="370dp"
         android:layout_height="53dp"
-        android:layout_marginEnd="48dp"
-        android:layout_marginBottom="180dp"
         android:background="@drawable/my_button"
         android:text="@string/electorateInfo"
         android:textColor="#000000"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/policyButton" />
 
     <Button
         android:id="@+id/policyButton"
         android:layout_width="363dp"
         android:layout_height="52dp"
-        android:layout_marginEnd="48dp"
-        android:layout_marginBottom="25dp"
         android:background="@drawable/my_button"
         android:text="@string/policyInfo"
         android:textColor="#000000"
         app:iconTint="#000000"
         app:layout_constraintBottom_toTopOf="@+id/electorateButton"
-        app:layout_constraintEnd_toEndOf="@+id/electorateButton"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/electorateButton" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/partyButton" />
 
     <Button
         android:id="@+id/partyButton"
         android:layout_width="361dp"
         android:layout_height="52dp"
-        android:layout_marginBottom="25dp"
         android:background="@drawable/my_button"
         android:text="@string/partyInfo"
         android:textColor="#000000"
         app:layout_constraintBottom_toTopOf="@+id/policyButton"
-        app:layout_constraintEnd_toEndOf="@+id/policyButton" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/quizButton" />
 
     <Button
         android:id="@+id/quizButton"
         android:layout_width="363dp"
         android:layout_height="52dp"
-        android:layout_marginBottom="25dp"
         android:background="#4CAF50"
         android:text="@string/takeQuiz"
         android:textColor="#000000"
         app:layout_constraintBottom_toTopOf="@+id/partyButton"
-        app:layout_constraintEnd_toEndOf="@+id/partyButton" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline3"
@@ -66,11 +62,15 @@
     <ImageView
         android:id="@+id/imageView3"
         android:layout_width="374dp"
-        android:layout_height="247dp"
-        android:layout_marginTop="96dp"
+        android:layout_height="76dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/logo_2"
-        tools:layout_editor_absoluteX="37dp" />
+        app:srcCompat="@drawable/logo_2" />
 
 
     <!--    <TextView-->

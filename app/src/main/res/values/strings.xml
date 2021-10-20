@@ -29,4 +29,11 @@
         <item>Māori Party</item>
     </string-array>
 
+    <string name="default_choice">Nothing pressed</string>
+    <string name="labour_choice"></string>
+    <string name="national_choice">National pressed</string>
+    <string name="green_choice">Green pressed</string>
+    <string name="act_choice">ACT pressed</string>
+    <string name="maori_choice">Maori pressed</string>
+
 </resources>
