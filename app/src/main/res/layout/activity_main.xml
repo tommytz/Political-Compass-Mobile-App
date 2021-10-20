@@ -21,52 +21,49 @@
         app:layout_constraintVertical_bias="0.092" />
 
     <Button
-        android:id="@+id/quizButton"
+        android:id="@+id/electorateButton"
         android:layout_width="363dp"
         android:layout_height="52dp"
-        android:layout_marginBottom="64dp"
-        android:background="#4CAF50"
-        android:text="Take the Quiz"
-        app:layout_constraintBottom_toTopOf="@+id/partyButton"
-        app:layout_constraintEnd_toEndOf="@+id/partyButton"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/partyButton"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
-
-    <Button
-        android:id="@+id/partyButton"
-        android:layout_width="361dp"
-        android:layout_height="54dp"
-        android:layout_marginBottom="52dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="180dp"
         android:background="@drawable/my_button"
-        android:text="Party Info"
-        app:layout_constraintBottom_toTopOf="@+id/policyButton"
-        app:layout_constraintEnd_toEndOf="@+id/policyButton"
-        app:layout_constraintEnd_toStartOf="@+id/guideline3"
-        app:layout_constraintStart_toStartOf="@+id/policyButton" />
+        android:text="Electorate Info"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <Button
         android:id="@+id/policyButton"
         android:layout_width="363dp"
-        android:layout_height="0dp"
-        android:layout_marginBottom="32dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="48dp"
         android:background="@drawable/my_button"
         android:text="Policy Info"
         app:layout_constraintBottom_toTopOf="@+id/electorateButton"
         app:layout_constraintEnd_toEndOf="@+id/electorateButton"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/electorateButton" />
+        app:layout_constraintStart_toStartOf="@+id/electorateButton"
+        app:layout_constraintTop_toBottomOf="@+id/quizButton"
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
-        android:id="@+id/electorateButton"
-        android:layout_width="363dp"
-        android:layout_height="51dp"
-        android:layout_marginBottom="152dp"
+        android:id="@+id/partyButton"
+        android:layout_width="361dp"
+        android:layout_height="52dp"
+        android:layout_marginBottom="24dp"
         android:background="@drawable/my_button"
-        android:text="Electorate Info"
-        app:layout_constraintBottom_toBottomOf="parent"
-        tools:layout_editor_absoluteX="23dp" />
+        android:text="Party Info"
+        app:layout_constraintBottom_toTopOf="@+id/quizButton"
+        app:layout_constraintEnd_toEndOf="@+id/quizButton" />
+
+    <Button
+        android:id="@+id/quizButton"
+        android:layout_width="363dp"
+        android:layout_height="52dp"
+        android:background="#4CAF50"
+        android:text="Take the Quiz"
+        app:layout_constraintEnd_toEndOf="@+id/policyButton"
+        tools:layout_editor_absoluteY="335dp" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline3"

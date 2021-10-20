@@ -4,6 +4,11 @@
     <string name="firstQuestion">Do you like plants?</string>
     <string name="secondQuestion">Do you like Orange?</string>
     <string name="thirdQuestion">Would you remember to release policy?</string>
+
+
+
+
+
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="policyTitle">Policy Info</string>
