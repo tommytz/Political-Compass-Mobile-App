@@ -17,6 +17,12 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        val partyButton : Button = findViewById(R.id.partyButton)
+        partyButton.setOnClickListener {
+            val intent = Intent(this, PartyActivity::class.java)
+            startActivity(intent)
+        }
+
         val policyButton : Button = findViewById(R.id.policyButton)
         policyButton.setOnClickListener {
             val intent = Intent(this, PolicyActivity::class.java)
