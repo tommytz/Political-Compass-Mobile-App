@@ -4,6 +4,10 @@
     <string name="firstQuestion">Do you like plants?</string>
     <string name="secondQuestion">Do you like Orange?</string>
     <string name="thirdQuestion">Would you remember to release policy?</string>
+    <string name="takeQuiz">Take Quiz</string>
+    <string name="partyInfo">Parties</string>
+    <string name="policyInfo">Policies</string>
+    <string name="electorateInfo">Electorates</string>
 
 
 
