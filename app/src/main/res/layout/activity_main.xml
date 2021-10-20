@@ -4,73 +4,66 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:background="@color/teal_200">
+    android:background="#8BC34A"
+    tools:context=".MainActivity">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="88dp"
-        android:textSize="40sp"
         android:text="@string/landingTitle"
         android:textAlignment="center"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        android:textSize="40sp"
+        tools:layout_editor_absoluteX="73dp"
+        tools:layout_editor_absoluteY="163dp" />
 
     <Button
         android:id="@+id/quizButton"
-        android:layout_width="310dp"
-        android:layout_height="100dp"
-        android:layout_marginTop="200dp"
-        android:background="@drawable/my_button"
-        android:text="Start the Quiz"
+        android:layout_width="363dp"
+        android:layout_height="52dp"
+        android:layout_marginBottom="29dp"
+        android:background="#4CAF50"
+        android:text="Take the Quiz"
         app:layout_constraintBottom_toTopOf="@+id/partyButton"
         app:layout_constraintEnd_toEndOf="@+id/partyButton"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="@+id/partyButton"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_chainStyle="spread" />
+        app:layout_constraintStart_toStartOf="@+id/partyButton" />
 
     <Button
         android:id="@+id/partyButton"
-        android:layout_width="310dp"
-        android:layout_height="100dp"
-        android:layout_marginTop="5dp"
+        android:layout_width="361dp"
+        android:layout_height="54dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="29dp"
         android:background="@drawable/my_button"
         android:text="Party Info"
         app:layout_constraintBottom_toTopOf="@+id/policyButton"
         app:layout_constraintEnd_toEndOf="@+id/policyButton"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="@+id/policyButton"
-        app:layout_constraintTop_toBottomOf="@+id/quizButton" />
+        app:layout_constraintEnd_toStartOf="@+id/guideline3" />
 
     <Button
         android:id="@+id/policyButton"
-        android:layout_width="310dp"
-        android:layout_height="100dp"
-        android:layout_marginTop="5dp"
+        android:layout_width="363dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="29dp"
         android:background="@drawable/my_button"
         android:text="Policy Info"
         app:layout_constraintBottom_toTopOf="@+id/electorateButton"
         app:layout_constraintEnd_toEndOf="@+id/electorateButton"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="@+id/electorateButton"
-        app:layout_constraintTop_toBottomOf="@+id/partyButton" />
+        app:layout_constraintStart_toStartOf="@+id/electorateButton" />
 
     <Button
         android:id="@+id/electorateButton"
-        android:layout_width="310dp"
-        android:layout_height="100dp"
-        android:layout_marginTop="5dp"
+        android:layout_width="363dp"
+        android:layout_height="51dp"
         android:background="@drawable/my_button"
         android:text="Electorate Info"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/policyButton"
-        app:layout_constraintVertical_bias="0.0" />
+        tools:layout_editor_absoluteY="506dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="362dp" />
 
 
     <!--    <TextView-->
