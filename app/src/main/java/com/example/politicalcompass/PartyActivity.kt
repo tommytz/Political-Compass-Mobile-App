@@ -8,6 +8,7 @@ import android.widget.ArrayAdapter
 import android.widget.AutoCompleteTextView
 import android.widget.TextView
 import com.google.android.material.textfield.TextInputLayout
+import java.util.*
 
 class PartyActivity : AppCompatActivity() {
 
@@ -17,30 +18,27 @@ class PartyActivity : AppCompatActivity() {
 
         val partyList = listOf<String>("Labour", "National", "Green", "ACT", "Maori")
 
-        val text : TextView = findViewById(R.id.textView)
+        var info : TextView = findViewById<TextView>(R.id.textView)
+        info.text = "Test"
+
         val partyMenu : AutoCompleteTextView = findViewById(R.id.menu)
         val parties = resources.getStringArray(R.array.parties)
         val adapter = ArrayAdapter(this, R.layout.list_item, parties)
         partyMenu.setAdapter(adapter)
 
         partyMenu.onItemSelectedListener = object : AdapterView.OnItemSelectedListener{
-            override fun onNothingSelected(parent: AdapterView<*>?) {
-                TODO("Not yet implemented")
-            }
-
             override fun onItemSelected(
                 parent: AdapterView<*>?,
                 view: View?,
                 position: Int,
                 id: Long
             ) {
-                TODO("Not yet implemented")
-                if (position == 0){
-                    text.setText(R.string.labour_choice)
-                }
+                info.text = partyList[position]
+                info.invalidate()
+            }
+
+            override fun onNothingSelected(parent: AdapterView<*>?) {
             }
         }
-
-
     }
 }
