@@ -20,7 +20,12 @@ class ElectoralActivity : AppCompatActivity() {
 
         richPathView.setOnPathClickListener { richPath ->
             if (richPath.name == "wellington_region") {
-                richPath.strokeColor = 11
+                if (richPath.strokeColor == 2){
+                    richPath.strokeColor = 3
+                } else {
+                    richPath.strokeColor = 2
+                }
+
             }
         }
 
