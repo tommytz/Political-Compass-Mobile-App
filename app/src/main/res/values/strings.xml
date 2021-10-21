@@ -8,6 +8,11 @@
     <string name="partyInfo">Parties</string>
     <string name="policyInfo">Policies</string>
     <string name="electorateInfo">Electorates</string>
+    <string name="sAgree">Strongly Agree</string>
+    <string name="Agree">Agree</string>
+    <string name="neutral">Neutral</string>
+    <string name="disagree">Disagree</string>
+    <string name="sDisagree">Strongly Disagree</string>
 
 
     <!-- TODO: Remove or change this placeholder text -->

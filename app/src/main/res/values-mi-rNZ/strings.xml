@@ -2,4 +2,17 @@
 <resources>
     <string name="app_name">Tōrangapū Kāpehu</string>
     <string name="landingTitle">Tōrangapū Kāpehu</string>
+    <string name="Agree">whakaae</string>
+    <string name="sAgree">kaha whakaae</string>
+    <string name="neutral">"kūpapa "</string>
+    <string name="disagree">"tautotohe "</string>
+    <string name="sDisagree">"kaha tautotohe "</string>
+    <string name="takeQuiz">kēmu patapatai</string>
+    <string name="partyInfo">Rōpū</string>
+    <string name="policyInfo">kaupapa</string>
+    <string name="electorateInfo">rohe pōti</string>
+    <string name="environmentButton">Te taiao</string>
+    <string name="housingButton">Whare</string>
+    <string name="secondQuestion">he pai ki a koe te karaka?</string>
+    <string name="firstQuestion">he pai ki a koe nga tipu?</string>
 </resources>
