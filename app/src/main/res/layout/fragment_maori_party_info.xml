@@ -19,13 +19,14 @@
 
     <ImageView
         android:id="@+id/imageView6"
-        android:layout_width="336dp"
-        android:layout_height="178dp"
+        android:layout_width="354dp"
+        android:layout_height="168dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
-        android:src="@drawable/maori_party_logo"
+        android:src="@drawable/maori_logo"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.48"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
