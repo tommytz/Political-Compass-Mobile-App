@@ -7,6 +7,7 @@
     android:theme="@style/Theme.MaterialComponents.Light.NoActionBar"
     tools:context=".PartyActivity">
 
+<!--    This text input layout is actually a dropdown menu with the autocomplete textview acting as the menu-->
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textInputLayout"
         style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
