@@ -28,12 +28,12 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, PolicyActivity::class.java)
             startActivity(intent)
         }
-        val electorateButton : Button = findViewById(R.id.electorateButton)
-        policyButton.setOnClickListener {
-            val intent = Intent(this,ElectorateActivity::class.java)
+
+        val electoralButton : Button = findViewById(R.id.electorateButton)
+        electoralButton.setOnClickListener {
+            val intent = Intent(this, ElectoralActivity::class.java)
             startActivity(intent)
         }
-
 
     }
 //    val play : CardView = findViewById(R.id.startQuiz)
