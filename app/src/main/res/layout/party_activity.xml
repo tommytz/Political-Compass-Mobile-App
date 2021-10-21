@@ -42,16 +42,17 @@
         app:layout_constraintTop_toBottomOf="@+id/textInputLayout" />
 
     <androidx.fragment.app.FragmentContainerView
-        android:id="@+id/partyFragments"
-        android:name="com.example.politicalcompass.DefaultPartyFragment"
-        android:layout_width="402dp"
-        android:layout_height="560dp"
+        android:id="@+id/fragmentContainerView"
+        android:name="com.example.politicalcompass.LabourPartyInfo"
+        android:layout_width="399dp"
+        android:layout_height="650dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="80dp"
         android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.521"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayout" />
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout"
+        app:layout_constraintVertical_bias="0.37" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
