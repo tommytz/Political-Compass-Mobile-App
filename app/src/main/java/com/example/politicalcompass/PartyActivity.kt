@@ -19,7 +19,7 @@ class PartyActivity : AppCompatActivity() {
         val adapter = ArrayAdapter(this, R.layout.list_item, parties)
         partyMenu.setAdapter(adapter)
 
-        partyMenu.onItemClickListener = AdapterView.OnItemClickListener{ _: AdapterView<*>?, _: View?, position: Int, _: Long -> replacePartyFragment(position) }
+        partyMenu.onItemClickListener = AdapterView.OnItemClickListener{_: AdapterView<*>?, _: View?, position: Int, _: Long -> replacePartyFragment(position)}
     }
 
     private fun replacePartyFragment(position : Int){
