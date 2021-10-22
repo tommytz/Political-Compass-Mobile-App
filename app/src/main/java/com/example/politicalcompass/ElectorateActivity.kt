@@ -27,10 +27,9 @@ class ElectorateActivity : AppCompatActivity() {
             currentPath = richPath
             richPath.strokeColor = Color.RED
 
-            val resultString = fixMeSomeWords(currentPath!!.name)
 
             val text: TextView = findViewById(R.id.nz_map_text_field)
-            text.text = resultString
+            text.text = currentPath!!.name
             for (path in pathArray) {
                 if (path == richPath) {
                     continue
@@ -42,7 +41,7 @@ class ElectorateActivity : AppCompatActivity() {
 
         val nextButton: Button = findViewById(R.id.next_button_map)
         nextButton.setOnClickListener {
-            if (currentPath != null && currentPath!!.name.equals("north_island")) {
+            if (currentPath != null && currentPath!!.name.equals("North Island")) {
                 val intent = Intent(this, ElectorateActivityNorth::class.java)
                 startActivity(intent)
             } else {
@@ -51,23 +50,6 @@ class ElectorateActivity : AppCompatActivity() {
         }
 
 
-    }
-
-    fun fixMeSomeWords(unformatted: String): String {
-        var resultString: String = ""
-        var nameArray = unformatted.split("_")
-        for (name in nameArray) {
-            var theOutline = name.substring(0, 1)
-            val restOfTheOwl = name.substring(1, name.length)
-            theOutline = theOutline.uppercase()
-            val formattedName = theOutline + restOfTheOwl
-            if (resultString.equals("")) {
-                resultString += formattedName
-            } else {
-                resultString += " " + formattedName
-            }
-        }
-        return resultString
     }
 
 }

@@ -30,10 +30,8 @@ class ElectorateActivityWellington : AppCompatActivity() {
             currentPath = richPath
             richPath.strokeColor = Color.RED
 
-            val resultString = fixMeSomeWords(currentPath!!.name)
-
             val text: TextView = findViewById(R.id.wellington_map_text_field)
-            text.text = resultString
+            text.text = currentPath!!.name
             for (path in pathArray) {
                 if (path == richPath) {
                     continue
@@ -52,23 +50,6 @@ class ElectorateActivityWellington : AppCompatActivity() {
         }
 
 
-    }
-
-    fun fixMeSomeWords(unformatted: String): String {
-        var resultString: String = ""
-        var nameArray = unformatted.split("_")
-        for (name in nameArray) {
-            var theOutline = name.substring(0, 1)
-            val restOfTheOwl = name.substring(1, name.length)
-            theOutline = theOutline.uppercase()
-            val formattedName = theOutline + restOfTheOwl
-            if (resultString.equals("")) {
-                resultString += formattedName
-            } else {
-                resultString += " " + formattedName
-            }
-        }
-        return resultString
     }
 
 }
