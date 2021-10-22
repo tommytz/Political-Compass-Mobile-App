@@ -1,14 +1,17 @@
 package com.example.politicalcompass
 
-import android.content.Intent
 import android.graphics.Color
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.fragment.app.Fragment
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
 import android.widget.Button
+import androidx.appcompat.app.AppCompatActivity
 import com.richpath.RichPath
 import com.richpath.RichPathView
 
-class ElectorateActivity : AppCompatActivity() {
+class ElectorateActivityWellington : AppCompatActivity() {
 
     val pathArray = mutableListOf<RichPath>()
     var currentPath: RichPath? = null
@@ -16,10 +19,10 @@ class ElectorateActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.electorate_map)
+        setContentView(R.layout.electorate_map_wellington)
 
 
-        val richPathView: RichPathView = findViewById(R.id.nz_map)
+        val richPathView: RichPathView = findViewById(R.id.wellington_map)
         richPathView.setOnPathClickListener { richPath ->
             pathArray.add(richPath)
             currentPath = richPath
@@ -33,12 +36,11 @@ class ElectorateActivity : AppCompatActivity() {
             }
         }
 
-        val nextButton: Button = findViewById(R.id.next_button_map)
+
+        val nextButton: Button = findViewById(R.id.next_button_wellington_map)
         nextButton.setOnClickListener {
-            if (currentPath!!.name.equals("north_island")) {
-                val intent = Intent(this, ElectorateActivityNorth::class.java)
-                startActivity(intent)
-            }
+
+            // need to open the electorate mps here
         }
 
 

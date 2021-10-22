@@ -3,19 +3,29 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".ElectorateMapFragment">
+    android:layout_height="match_parent">
 
 
     <com.richpath.RichPathView
         android:id="@+id/nz_map"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:vector="@drawable/ic_island_split"
+        app:vector="@drawable/ic_north_island"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toTopOf="parent" />
+        app:layout_constraintBottom_toTopOf="@id/next_button_north_map" />
+
+    <Button
+        android:id="@+id/next_button_north_map"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:text="@string/next_button"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
 
 
     <!--    <Button-->
