@@ -8,6 +8,9 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 
 class QuizActivity : AppCompatActivity() {
+    private var answers = HashMap<Int, String>()
+
+    var qCount = 1
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -20,7 +23,25 @@ class QuizActivity : AppCompatActivity() {
 
         val selectedRadioButtonId: Int = radioGroup.checkedRadioButtonId
         val checkedRadioButton: RadioButton = findViewById(selectedRadioButtonId)
+        val answer = checkedRadioButton.text
+        addAnswer(qCount, answer as String) // need to have a count for question
         Toast.makeText(this, checkedRadioButton.text, Toast.LENGTH_SHORT).show()
         radioGroup.clearCheck()
+        qCount++
+
+    }
+
+    fun addAnswer(question: Int, answer: String) {
+        answers[question] = answer
+    }
+    fun result(){
+        //needs to carry answers list across to result activity
     }
 }
+
+
+
+
+
+
+
