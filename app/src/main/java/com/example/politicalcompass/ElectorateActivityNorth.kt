@@ -4,6 +4,7 @@ import android.content.Intent
 import android.graphics.Color
 import android.os.Bundle
 import android.widget.Button
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.richpath.RichPath
 import com.richpath.RichPathView
@@ -39,6 +40,8 @@ class ElectorateActivityNorth : AppCompatActivity() {
             if (currentPath!!.name.equals("wellington")) {
                 val intent = Intent(this, ElectorateActivityWellington::class.java)
                 startActivity(intent)
+            } else {
+                Toast.makeText(this, "That ain't it", Toast.LENGTH_SHORT).show()
             }
         }
 

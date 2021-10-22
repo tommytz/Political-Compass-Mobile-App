@@ -7,6 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.richpath.RichPath
 import com.richpath.RichPathView
@@ -39,7 +40,8 @@ class ElectorateActivityWellington : AppCompatActivity() {
 
         val nextButton: Button = findViewById(R.id.next_button_wellington_map)
         nextButton.setOnClickListener {
-
+            Toast.makeText(this, "I'll go get your MP's, wait right here", Toast.LENGTH_SHORT)
+                .show()
             // need to open the electorate mps here
         }
 
