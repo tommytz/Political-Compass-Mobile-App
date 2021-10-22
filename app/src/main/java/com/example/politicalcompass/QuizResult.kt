@@ -1,11 +1,11 @@
-package com.example.politicalcompass;
+package com.example.politicalcompass
 
-public class QuizResultActivity {
+class QuizResult(val answers: HashMap<Int, String>) {
     var vertical = 0
     var horizontal = 0
 
     fun score() {
-        for (i in answers.keySet()) {
+        for (i in answers.keys) {
             val s = answers[i]
             if (i == 1) {
                 verticalDown(s)
@@ -24,62 +24,61 @@ public class QuizResultActivity {
 
     fun horizontalUp(answer: String?) {
         if (answer.equals("Strongly Agree", ignoreCase = true)) {
-            horizontal = horizontal + 2
+            horizontal += 2
         }
         if (answer.equals("Agree", ignoreCase = true)) {
-            horizontal = horizontal++
+            horizontal++
         }
         if (answer.equals("Disagree", ignoreCase = true)) {
-            horizontal = horizontal--
+            horizontal--
         }
         if (answer.equals("Strongly Disagree", ignoreCase = true)) {
-            horizontal = horizontal - 2
+            horizontal -= 2
         }
     }
 
     fun horizontalDown(answer: String?) {
         if (answer.equals("Strongly Agree", ignoreCase = true)) {
-            horizontal = horizontal - 2
+            horizontal -= 2
         }
         if (answer.equals("Agree", ignoreCase = true)) {
-            horizontal = horizontal--
+            horizontal--
         }
         if (answer.equals("Disagree", ignoreCase = true)) {
-            horizontal = horizontal++
+            horizontal++
         }
         if (answer.equals("Strongly Disagree", ignoreCase = true)) {
-            horizontal = horizontal + 2
+            horizontal += 2
         }
     }
 
     fun verticalUp(answer: String?) {
         if (answer.equals("Strongly Agree", ignoreCase = true)) {
-            vertical = vertical + 2
+            vertical += 2
         }
         if (answer.equals("Agree", ignoreCase = true)) {
-            vertical = vertical++
+            vertical++
         }
         if (answer.equals("Disagree", ignoreCase = true)) {
-            vertical = vertical--
+            vertical--
         }
         if (answer.equals("Strongly Disagree", ignoreCase = true)) {
-            vertical = vertical - 2
+            vertical -= 2
         }
     }
 
     fun verticalDown(answer: String?) {
         if (answer.equals("Strongly Agree", ignoreCase = true)) {
-            vertical = vertical - 2
+            vertical -= 2
         }
         if (answer.equals("Agree", ignoreCase = true)) {
-            vertical = vertical--
+            vertical--
         }
         if (answer.equals("Disagree", ignoreCase = true)) {
-            vertical = vertical++
+            vertical++
         }
         if (answer.equals("Strongly Disagree", ignoreCase = true)) {
-            vertical = vertical + 2
+            vertical += 2
         }
     }
-}
 }

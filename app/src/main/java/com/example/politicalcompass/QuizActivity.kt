@@ -8,9 +8,9 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 
 class QuizActivity : AppCompatActivity() {
-    private var answers = HashMap<Int, String>()
+    private val answers = HashMap<Int, String>()
 
-    var qCount = 1
+    var questionCount = 1
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -24,18 +24,29 @@ class QuizActivity : AppCompatActivity() {
         val selectedRadioButtonId: Int = radioGroup.checkedRadioButtonId
         val checkedRadioButton: RadioButton = findViewById(selectedRadioButtonId)
         val answer = checkedRadioButton.text
-        addAnswer(qCount, answer as String) // need to have a count for question
         Toast.makeText(this, checkedRadioButton.text, Toast.LENGTH_SHORT).show()
+
+        addAnswer(questionCount, answer as String) // need to have a count for question
         radioGroup.clearCheck()
-        qCount++
+        if (questionCount <= 4) {
+            println("Questions answered: $questionCount")
+            TODO("Add logic to change the question text")
+        } else {
+            result()
+        }
+        questionCount++
+
 
     }
 
     fun addAnswer(question: Int, answer: String) {
         answers[question] = answer
+        println("Question $question - Answer: $answer")
     }
-    fun result(){
-        //needs to carry answers list across to result activity
+
+    fun result() {
+        TODO("Create QuizResult object passing it the answers map")
+        TODO("Get party result from QuizResult public function and go to new activity")
     }
 }
 
