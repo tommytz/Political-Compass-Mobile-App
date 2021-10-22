@@ -31,7 +31,7 @@ class MainActivity : AppCompatActivity() {
 
         val electoralButton : Button = findViewById(R.id.electorateButton)
         electoralButton.setOnClickListener {
-            val intent = Intent(this, ElectoralActivity::class.java)
+            val intent = Intent(this, ElectorateActivity::class.java)
             startActivity(intent)
         }
 
