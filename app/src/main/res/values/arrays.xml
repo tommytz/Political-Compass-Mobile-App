@@ -1,0 +1,25 @@
+<resources>
+    <!-- Theme Preference Array -->
+    <string-array name="theme_entries">
+        <item>Light Mode</item>
+        <item>Dark Mode</item>
+        <item>Garfield Mode</item>
+    </string-array>
+
+    <string-array name="theme_values">
+        <item>light_mode</item>
+        <item>dark_mode</item>
+        <item>garfield_mode</item>
+    </string-array>
+
+    <!-- Language Preference Array -->
+    <string-array name="language_entries">
+        <item>English</item>
+        <item>Te Reo Maori</item>
+    </string-array>
+
+    <string-array name="language_values">
+        <item>english</item>
+        <item>te_reo_maori</item>
+    </string-array>
+</resources>

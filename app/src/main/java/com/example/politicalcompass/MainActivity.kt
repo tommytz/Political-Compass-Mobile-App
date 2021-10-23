@@ -3,7 +3,9 @@ package com.example.politicalcompass
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import android.widget.Button
+import android.widget.ImageButton
 
 
 class MainActivity : AppCompatActivity() {
@@ -29,10 +31,17 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-        val electoralButton : Button = findViewById(R.id.electorateButton)
+        val electoralButton: Button = findViewById(R.id.electorateButton)
         electoralButton.setOnClickListener {
             val intent = Intent(this, ElectorateActivity::class.java)
             startActivity(intent)
+        }
+
+        val settingsButton: ImageButton = findViewById(R.id.settingsButton)
+        settingsButton.setOnClickListener {
+            val intent = Intent(this, BlankActivity::class.java)
+            startActivity(intent)
+//            view!!.setBackgroundColor(resources.getColor(R.color.white))
         }
 
     }
