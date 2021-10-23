@@ -39,8 +39,10 @@
         <entry key="..\:/Users/Thomas/AndroidStudioProjects/politicalcompass/app/src/main/res/layout/settings.xml" value="0.2015625" />
         <entry key="..\:/Users/Thomas/AndroidStudioProjects/politicalcompass/app/src/main/res/xml/scene_01.xml" value="0.2753623188405797" />
         <entry key="app/src/main/res/drawable/my_button.xml" value="0.26974358974358975" />
-        <entry key="app/src/main/res/layout/activity_main.xml" value="0.22102036135133313" />
-        <entry key="app/src/main/res/layout/quiz_activity.xml" value="0.2260323731530153" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/quiz_activity.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/settings.xml" value="0.19791666666666666" />
+        <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.23802083333333332" />
       </map>
     </option>
   </component>
