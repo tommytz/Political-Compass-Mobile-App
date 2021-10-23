@@ -3,8 +3,41 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.23802083333333332" />
-        <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.23802083333333332" />
+        <entry key="..\:/Users/Damon/AndroidStudioProjects/politicalcompass/app/src/main/res/drawable/ic_island_split.xml" value="0.2740740740740741" />
+        <entry key="..\:/Users/Damon/AndroidStudioProjects/politicalcompass/app/src/main/res/drawable/ic_launcher_background.xml" value="0.561025641025641" />
+        <entry key="..\:/Users/Damon/AndroidStudioProjects/politicalcompass/app/src/main/res/drawable/ic_newzealand.xml" value="0.67" />
+        <entry key="..\:/Users/Damon/AndroidStudioProjects/politicalcompass/app/src/main/res/drawable/ic_north_island.xml" value="0.33" />
+        <entry key="..\:/Users/Damon/AndroidStudioProjects/politicalcompass/app/src/main/res/drawable/ic_nzsvgsplitnamed.xml" value="0.2935185185185185" />
+        <entry key="..\:/Users/Damon/AndroidStudioProjects/politicalcompass/app/src/main/res/drawable/ic_wellington.xml" value="0.1" />
+        <entry key="..\:/Users/Damon/AndroidStudioProjects/politicalcompass/app/src/main/res/drawable/ic_wellington_electorates.xml" value="0.33" />
+        <entry key="..\:/Users/Damon/AndroidStudioProjects/politicalcompass/app/src/main/res/drawable/map_button.xml" value="0.19537037037037036" />
+        <entry key="..\:/Users/Damon/AndroidStudioProjects/politicalcompass/app/src/main/res/layout/activity_main.xml" value="0.328125" />
+        <entry key="..\:/Users/Damon/AndroidStudioProjects/politicalcompass/app/src/main/res/layout/blank_layout.xml" value="0.2222222222222222" />
+        <entry key="..\:/Users/Damon/AndroidStudioProjects/politicalcompass/app/src/main/res/layout/electoral_map_base.xml" value="0.33177083333333335" />
+        <entry key="..\:/Users/Damon/AndroidStudioProjects/politicalcompass/app/src/main/res/layout/electoral_map_one.xml" value="0.2" />
+        <entry key="..\:/Users/Damon/AndroidStudioProjects/politicalcompass/app/src/main/res/layout/electoral_map_two.xml" value="0.5536458333333333" />
+        <entry key="..\:/Users/Damon/AndroidStudioProjects/politicalcompass/app/src/main/res/layout/electorate_map.xml" value="0.25" />
+        <entry key="..\:/Users/Damon/AndroidStudioProjects/politicalcompass/app/src/main/res/layout/electorate_map_north.xml" value="0.3541666666666667" />
+        <entry key="..\:/Users/Damon/AndroidStudioProjects/politicalcompass/app/src/main/res/layout/electorate_map_wellington.xml" value="0.3541666666666667" />
+        <entry key="..\:/Users/Damon/AndroidStudioProjects/politicalcompass/app/src/main/res/layout/fragment_act_info.xml" value="0.5536458333333333" />
+        <entry key="..\:/Users/Damon/AndroidStudioProjects/politicalcompass/app/src/main/res/layout/fragment_default_party.xml" value="0.5536458333333333" />
+        <entry key="..\:/Users/Damon/AndroidStudioProjects/politicalcompass/app/src/main/res/layout/fragment_green_party_info.xml" value="0.5536458333333333" />
+        <entry key="..\:/Users/Damon/AndroidStudioProjects/politicalcompass/app/src/main/res/layout/fragment_labour_party_info.xml" value="0.5536458333333333" />
+        <entry key="..\:/Users/Damon/AndroidStudioProjects/politicalcompass/app/src/main/res/layout/fragment_maori_party_info.xml" value="0.2638888888888889" />
+        <entry key="..\:/Users/Damon/AndroidStudioProjects/politicalcompass/app/src/main/res/layout/party_activity.xml" value="0.33177083333333335" />
+        <entry key="..\:/Users/Damon/AndroidStudioProjects/politicalcompass/app/src/main/res/layout/policy_landing_page_activity.xml" value="0.5287037037037037" />
+        <entry key="..\:/Users/Damon/AndroidStudioProjects/politicalcompass/app/src/main/res/xml/root_preferences.xml" value="0.33" />
+        <entry key="..\:/Users/Thomas/AndroidStudioProjects/politicalcompass/app/src/main/res/drawable/ic_new_zealand_labour_party_logo.xml" value="0.22314814814814815" />
+        <entry key="..\:/Users/Thomas/AndroidStudioProjects/politicalcompass/app/src/main/res/drawable/my_button.xml" value="0.3828125" />
+        <entry key="..\:/Users/Thomas/AndroidStudioProjects/politicalcompass/app/src/main/res/layout/activity_main.xml" value="0.29483695652173914" />
+        <entry key="..\:/Users/Thomas/AndroidStudioProjects/politicalcompass/app/src/main/res/layout/activity_party.xml" value="0.2753623188405797" />
+        <entry key="..\:/Users/Thomas/AndroidStudioProjects/politicalcompass/app/src/main/res/layout/dropdown_item.xml" value="0.2463768115942029" />
+        <entry key="..\:/Users/Thomas/AndroidStudioProjects/politicalcompass/app/src/main/res/layout/party_activity.xml" value="0.1" />
+        <entry key="..\:/Users/Thomas/AndroidStudioProjects/politicalcompass/app/src/main/res/layout/policy_info_activity.xml" value="0.20520833333333333" />
+        <entry key="..\:/Users/Thomas/AndroidStudioProjects/politicalcompass/app/src/main/res/layout/policy_landing_page_activity.xml" value="0.20520833333333333" />
+        <entry key="..\:/Users/Thomas/AndroidStudioProjects/politicalcompass/app/src/main/res/layout/quiz_activity.xml" value="0.29483695652173914" />
+        <entry key="..\:/Users/Thomas/AndroidStudioProjects/politicalcompass/app/src/main/res/layout/settings.xml" value="0.2015625" />
+        <entry key="..\:/Users/Thomas/AndroidStudioProjects/politicalcompass/app/src/main/res/xml/scene_01.xml" value="0.2753623188405797" />
         <entry key="app/src/main/res/drawable/my_button.xml" value="0.26974358974358975" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.33" />
         <entry key="app/src/main/res/layout/quiz_activity.xml" value="0.25" />
