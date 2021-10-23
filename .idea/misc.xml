@@ -26,6 +26,7 @@
         <entry key="..\:/Users/Damon/AndroidStudioProjects/politicalcompass/app/src/main/res/layout/fragment_maori_party_info.xml" value="0.2638888888888889" />
         <entry key="..\:/Users/Damon/AndroidStudioProjects/politicalcompass/app/src/main/res/layout/party_activity.xml" value="0.33177083333333335" />
         <entry key="..\:/Users/Damon/AndroidStudioProjects/politicalcompass/app/src/main/res/layout/policy_landing_page_activity.xml" value="0.5287037037037037" />
+        <entry key="..\:/Users/Damon/AndroidStudioProjects/politicalcompass/app/src/main/res/layout/quiz_activity.xml" value="0.14814814814814814" />
         <entry key="..\:/Users/Damon/AndroidStudioProjects/politicalcompass/app/src/main/res/xml/root_preferences.xml" value="0.33" />
         <entry key="..\:/Users/Thomas/AndroidStudioProjects/politicalcompass/app/src/main/res/drawable/ic_new_zealand_labour_party_logo.xml" value="0.22314814814814815" />
         <entry key="..\:/Users/Thomas/AndroidStudioProjects/politicalcompass/app/src/main/res/drawable/my_button.xml" value="0.3828125" />
@@ -39,10 +40,8 @@
         <entry key="..\:/Users/Thomas/AndroidStudioProjects/politicalcompass/app/src/main/res/layout/settings.xml" value="0.2015625" />
         <entry key="..\:/Users/Thomas/AndroidStudioProjects/politicalcompass/app/src/main/res/xml/scene_01.xml" value="0.2753623188405797" />
         <entry key="app/src/main/res/drawable/my_button.xml" value="0.26974358974358975" />
-        <entry key="app/src/main/res/layout/activity_main.xml" value="0.33" />
-        <entry key="app/src/main/res/layout/quiz_activity.xml" value="0.25" />
-        <entry key="app/src/main/res/layout/settings.xml" value="0.19791666666666666" />
-        <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.23802083333333332" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.22102036135133313" />
+        <entry key="app/src/main/res/layout/quiz_activity.xml" value="0.2260323731530153" />
       </map>
     </option>
   </component>
