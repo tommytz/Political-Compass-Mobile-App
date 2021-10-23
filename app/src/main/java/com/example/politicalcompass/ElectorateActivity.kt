@@ -25,7 +25,7 @@ class ElectorateActivity : AppCompatActivity() {
         richPathView.setOnPathClickListener { richPath ->
             pathArray.add(richPath)
             currentPath = richPath
-            richPath.strokeColor = Color.RED
+            richPath.fillColor = Color.RED
 
 
             val text: TextView = findViewById(R.id.nz_map_text_field)
@@ -34,7 +34,7 @@ class ElectorateActivity : AppCompatActivity() {
                 if (path == richPath) {
                     continue
                 } else {
-                    path.strokeColor = Color.WHITE
+                    path.fillColor = Color.rgb(120, 120, 120)
                 }
             }
         }
