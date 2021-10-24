@@ -1,5 +1,6 @@
 package com.example.politicalcompass
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import android.widget.*
@@ -44,8 +45,8 @@ class QuizActivity : AppCompatActivity() {
 
     /* This function creates a new results object, gets a fragment to open the results activity, then resets the quiz answers and question number */
     fun result(questionText : TextView) {
-        val quizResult = QuizResult(answers)
-        val resultFragment = quizResult.score()
+        val quizResultFragment = QuizResult(answers).score()
+        val fragmentID = quizResultFragment.id
 
         // Reset quiz questions and answers
         answers.clear()
@@ -53,8 +54,10 @@ class QuizActivity : AppCompatActivity() {
         questionText.text = R.string.firstQuestion.toString()
 
         // Something to go to a new activity using the fragment from quiz score
-
-    }
+        val intent = Intent(this, QuizResultActivity::class.java)
+        intent.putExtra("fragmentToLoad", fragmentID)
+        startActivity(intent)
+    } // CONSIDER JUST SENDING AN INT INSTEAD
 }
 
 
