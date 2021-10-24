@@ -5,7 +5,7 @@ import androidx.preference.DropDownPreference
 import androidx.preference.ListPreference
 import androidx.preference.PreferenceFragmentCompat
 import androidx.preference.PreferenceManager
-import com.example.politicalcompass.BlankActivity.Companion.dLocale
+//import com.example.politicalcompass.BlankActivity.Companion.dLocale
 import java.util.*
 
 class SettingsFragment : PreferenceFragmentCompat() {
@@ -23,21 +23,21 @@ class SettingsFragment : PreferenceFragmentCompat() {
         var change = ""
         val sharedPreferences = PreferenceManager.getDefaultSharedPreferences(this.context)
         val language = sharedPreferences.getString("language", "bak")
-        if (language == "Enlgihs") {
-            change = "en"
+        if (language == "English") {
+            change = "english"
         } else if (language == "Te Reo Maori") {
-            change = "maori"
+            change = "te_reo_maori"
         } else {
             change = ""
         }
 
-        BlankActivity.dLocale = Locale(change)
-
-        themePreference!!.setOnPreferenceChangeListener { preference, newValue ->
-            dLocale = sharedPreferences.getString(newValue, "bak")
-            Locale.CHINA
-            preference.setDefaultValue(newValue)
-        }
+//        BlankActivity.dLocale = Locale(change)
+//
+//        themePreference!!.setOnPreferenceChangeListener { preference, newValue ->
+//            dLocale = sharedPreferences.getString(newValue, "bak")
+//            Locale.CHINA
+//            preference.setDefaultValue(newValue)
+//        }
 //        themePreference.setOnPreferenceChangeListener( preferenceChangeListen : OnPreferenceChangeListern() {
 //
 //        })
