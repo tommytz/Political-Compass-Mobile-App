@@ -24,6 +24,7 @@ class QuizResult(private val answers: HashMap<Int, String>) {
             }
         }
        return partyResult(vertical, horizontal)
+       // This is the part that needs work
     }
 
     private fun partyResult(verticalScore : Int, horizontalScore : Int) : Fragment {
