@@ -31,6 +31,7 @@ class SettingsFragment : PreferenceFragmentCompat() {
             change = ""
         }
 
+
 //        BlankActivity.dLocale = Locale(change)
 //
 //        themePreference!!.setOnPreferenceChangeListener { preference, newValue ->
