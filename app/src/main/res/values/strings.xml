@@ -111,5 +111,7 @@ Cursus metus aliquam eleifend mi in nulla posuere sollicitudin. Volutpat est vel
     <string name="english_language">English</string>
     <string name="maori_language">Te Reo Maori</string>
     <string name="attachment_summary_off">Only download attachments when manually requested</string>
+    <string name="quiz_result_title">Quiz Result</string>
+    <string name="redo_quiz">Redo Quiz</string>
 
 </resources>
