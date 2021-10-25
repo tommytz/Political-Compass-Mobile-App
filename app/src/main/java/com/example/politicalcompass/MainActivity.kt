@@ -13,19 +13,19 @@ class MainActivity : AppCompatActivity() {
         supportActionBar?.hide()
         setContentView(R.layout.activity_main)
 
-        val quizButton : Button = findViewById(R.id.quizButton)
+        val quizButton: Button = findViewById(R.id.quizButton)
         quizButton.setOnClickListener {
             val intent = Intent(this, QuizActivity::class.java)
             startActivity(intent)
         }
 
-        val partyButton : Button = findViewById(R.id.partyButton)
+        val partyButton: Button = findViewById(R.id.partyButton)
         partyButton.setOnClickListener {
             val intent = Intent(this, PartyActivity::class.java)
             startActivity(intent)
         }
 
-        val policyButton : Button = findViewById(R.id.policyButton)
+        val policyButton: Button = findViewById(R.id.policyButton)
         policyButton.setOnClickListener {
             val intent = Intent(this, PolicyActivity::class.java)
             startActivity(intent)
@@ -43,13 +43,11 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
 //            view!!.setBackgroundColor(resources.getColor(R.color.white))
         }
-
     }
-//    val play : CardView = findViewById(R.id.startQuiz)
 
-
-//    fun startQuiz(view : View){
-//        val quizActivityIntent: Intent = Intent(this@MainActivity, QuizActivity::class.java)
-//        startActivity(quizActivityIntent)
-//    }
+    override fun onBackPressed() {
+//        super.onBackPressed()
+        finishAffinity()
+        finish()
+    }
 }
