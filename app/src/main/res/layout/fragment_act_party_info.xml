@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MaoriPartyInfo">
+    android:background="#FFFFFF"
+    tools:context=".ACTInfo">
 
     <!-- TODO: Update blank fragment layout -->
 
@@ -29,6 +30,8 @@
                     android:id="@+id/imageView23"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
+                    android:background="#FFFFFF"
+                    android:fadeScrollbars="false"
                     android:src="@drawable/ic_act_new_zealand_cmyk" />
             </TableRow>
 
@@ -58,7 +61,7 @@
 
             <TableRow
                 android:layout_width="match_parent"
-                android:layout_height="match_parent" >
+                android:layout_height="match_parent">
 
                 <ImageView
                     android:id="@+id/imageView25"
@@ -69,7 +72,7 @@
 
             <TableRow
                 android:layout_width="match_parent"
-                android:layout_height="17dp" >
+                android:layout_height="17dp">
 
                 <ImageView
                     android:id="@+id/imageView26"
@@ -91,7 +94,7 @@
 
             <TableRow
                 android:layout_width="match_parent"
-                android:layout_height="17dp" >
+                android:layout_height="17dp">
 
                 <TextView
                     android:id="@+id/textView4"

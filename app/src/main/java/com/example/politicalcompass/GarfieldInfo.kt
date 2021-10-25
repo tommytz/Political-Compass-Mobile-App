@@ -13,10 +13,10 @@ private const val ARG_PARAM2 = "param2"
 
 /**
  * A simple [Fragment] subclass.
- * Use the [ACTInfo.newInstance] factory method to
+ * Use the [GarfieldInfo.newInstance] factory method to
  * create an instance of this fragment.
  */
-class ACTInfo : Fragment() {
+class GarfieldInfo : Fragment() {
     // TODO: Rename and change types of parameters
     private var param1: String? = null
     private var param2: String? = null
