@@ -1,11 +1,18 @@
 package com.example.politicalcompass
 
+import androidx.fragment.app.Fragment
+
 class QuizResult(private val answers: HashMap<Int, String>) {
     var vertical = 0
     var horizontal = 0
 
+    val LABOUR: Int = 0
+    val NATIONAL: Int = 1
+    val GREEN: Int = 2
+    val ACT: Int = 3
+    val MAORI: Int = 4
 
-    fun score() {
+    fun score() : Int {
         for (i in answers.keys) {
             val s = answers[i]
             if (i == 1) {
@@ -29,8 +36,8 @@ class QuizResult(private val answers: HashMap<Int, String>) {
         return partyResult(vertical, horizontal)
     }
 
-    private fun partyResult(verticalScore : Int, horizontalScore : Int) : Fragment {
-        return partyFragmentList[0] // Placeholder until we put logic in...
+    private fun partyResult(verticalScore : Int, horizontalScore : Int) : Int {
+        return LABOUR
     }
 
     fun horizontalRight(answer: String?) {

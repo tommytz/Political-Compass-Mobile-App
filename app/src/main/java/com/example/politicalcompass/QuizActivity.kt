@@ -56,8 +56,7 @@ class QuizActivity : AppCompatActivity() {
 
     /* This function creates a new results object, gets a fragment to open the results activity, then resets the quiz answers and question number */
     fun result(questionText : TextView) {
-        val quizResultFragment = QuizResult(answers).score()
-//        val fragmentID = quizResultFragment.id
+        val quizResultParty : Int = QuizResult(answers).score()
 
         // Reset quiz questions and answers
         answers.clear()
@@ -66,9 +65,9 @@ class QuizActivity : AppCompatActivity() {
 
         // Something to go to a new activity using the fragment from quiz score
         val intent = Intent(this, QuizResultActivity::class.java)
-//        intent.putExtra("fragmentToLoad", fragmentID)
+        intent.putExtra("fragmentToLoad", quizResultParty)
         startActivity(intent)
-    } // CONSIDER JUST SENDING AN INT INSTEAD
+    }
 }
 
 
