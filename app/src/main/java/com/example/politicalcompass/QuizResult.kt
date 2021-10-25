@@ -1,7 +1,5 @@
 package com.example.politicalcompass
 
-import androidx.fragment.app.Fragment
-
 class QuizResult(private val answers: HashMap<Int, String>) {
     var vertical = 0
     var horizontal = 0
@@ -11,8 +9,9 @@ class QuizResult(private val answers: HashMap<Int, String>) {
     val GREEN: Int = 2
     val ACT: Int = 3
     val MAORI: Int = 4
+    val GARFIELD: Int = 5
 
-    fun score() : Int {
+    fun score(): Int {
         for (i in answers.keys) {
             val s = answers[i]
             if (i == 1) {
@@ -36,27 +35,27 @@ class QuizResult(private val answers: HashMap<Int, String>) {
         return partyResult(vertical, horizontal)
     }
 
-    private fun partyResult(verticalScore : Int, horizontalScore : Int) : Int {
+    private fun partyResult(verticalScore: Int, horizontalScore: Int): Int {
 
         if (horizontalScore <= -4 && horizontalScore >= 2) {
             return LABOUR
         }
-        if (verticalScore >= 5 && horizontalScore <= -4){
+        if (verticalScore >= 5 && horizontalScore <= -4) {
             return GREEN
         }
-        if (verticalScore >= 4 && horizontalScore <= -5){
+        if (verticalScore >= 4 && horizontalScore <= -5) {
             return MAORI
         }
-        if (verticalScore >= -2 && horizontalScore >= 3){
+        if (verticalScore >= -2 && horizontalScore >= 3) {
             return NATIONAL
         }
-        if (horizontalScore <= -2 && horizontalScore >= 6){
+        if (horizontalScore <= -2 && horizontalScore >= 6) {
             return NATIONAL
         }
-        if (verticalScore >= -3 && horizontalScore >= 6){
+        if (verticalScore >= -3 && horizontalScore >= 6) {
             return ACT
         }
-
+        return GARFIELD
     }
 
     fun horizontalRight(answer: String?) {

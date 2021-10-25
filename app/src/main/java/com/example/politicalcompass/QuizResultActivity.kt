@@ -5,7 +5,7 @@ import android.os.Bundle
 import androidx.fragment.app.Fragment
 
 class QuizResultActivity : AppCompatActivity() {
-    private val partyFragmentList = listOf<Fragment>(LabourPartyInfo(), NationalPartyInfo(), GreenPartyInfo(), ACTInfo(), MaoriPartyInfo())
+    private val partyFragmentList = listOf<Fragment>(LabourPartyInfo(), NationalPartyInfo(), GreenPartyInfo(), ACTInfo(), MaoriPartyInfo(), DefaultPartyFragment())
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
