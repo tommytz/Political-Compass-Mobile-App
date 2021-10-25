@@ -20,9 +20,9 @@ class QuizActivity : AppCompatActivity() {
         val question: TextView = findViewById(R.id.quiz_question)
         val radioGroup: RadioGroup = findViewById(R.id.radio_group)
 
-        //selectedRadioButtonID is -1 if nothing is selected
+
         val selectedRadioButtonId: Int = radioGroup.checkedRadioButtonId
-        if (selectedRadioButtonId == -1) {
+        if (selectedRadioButtonId == -1) {  //selectedRadioButtonID is -1 if nothing is selected
             Toast.makeText(this, "Please select option before continuing", Toast.LENGTH_SHORT)
                 .show()
         } else {
