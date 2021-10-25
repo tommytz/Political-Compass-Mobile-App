@@ -13,23 +13,23 @@ class QuizResult(private val answers: HashMap<Int, String>) {
 
     fun score(): Int {
         for (i in answers.keys) {
-            val s = answers[i]
+            val answerString = answers[i]
             if (i == 1) {
-                horizontalRight(s) //economic right
-                verticalDown(s) //libertarian
+                horizontalRight(answerString) //economic right
+                verticalDown(answerString) //libertarian
             }
             if (i == 2) {
-                verticalDown(s) //libertarian
-                horizontalLeft(s) //economic left
+                verticalDown(answerString) //libertarian
+                horizontalLeft(answerString) //economic left
 
             }
             if (i == 3) {
-                horizontalRight(s) //economic right
-                verticalUp(s) //authoritarian
+                horizontalRight(answerString) //economic right
+                verticalUp(answerString) //authoritarian
             }
             if (i == 4) {
-                horizontalLeft(s) //economic left
-                verticalUp(s) //authoritarian
+                horizontalLeft(answerString) //economic left
+                verticalUp(answerString) //authoritarian
             }
         }
         return partyResult(vertical, horizontal)
