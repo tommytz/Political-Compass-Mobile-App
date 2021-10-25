@@ -8,84 +8,87 @@
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/quizButton"
-        style="@style/Widget.AppCompat.Button"
+        android:id="@+id/policyButton"
         android:layout_width="160dp"
         android:layout_height="141dp"
-        android:layout_marginBottom="16dp"
         android:background="@drawable/my_button"
-        android:text="@string/takeQuiz"
+        android:text="@string/policyInfo"
         android:textColor="#000000"
-        app:layout_constraintBottom_toTopOf="@+id/policyButton"
-        app:layout_constraintEnd_toStartOf="@+id/partyButton"
+        app:iconTint="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/settingsButton"
+        app:layout_constraintEnd_toStartOf="@+id/electorateButton"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/quizButton" />
+
+    <ImageView
+        android:id="@+id/imageView18"
+        android:layout_width="357dp"
+        android:layout_height="141dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo_3" />
 
     <Button
         android:id="@+id/partyButton"
         android:layout_width="160dp"
         android:layout_height="140dp"
-        android:layout_marginBottom="324dp"
         android:background="@drawable/my_button"
         android:text="@string/partyInfo"
         android:textColor="#000000"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/electorateButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/quizButton" />
+        app:layout_constraintStart_toEndOf="@+id/quizButton"
+        app:layout_constraintTop_toBottomOf="@+id/imageView18" />
 
     <Button
         android:id="@+id/electorateButton"
         android:layout_width="160dp"
         android:layout_height="141dp"
-        android:layout_marginTop="25dp"
-        android:layout_marginBottom="172dp"
         android:background="@drawable/my_button"
         android:text="@string/electorateInfo"
         android:textColor="#000000"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/settingsButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/policyButton"
         app:layout_constraintTop_toBottomOf="@+id/partyButton" />
 
     <Button
-        android:id="@+id/policyButton"
+        android:id="@+id/quizButton"
+        style="@style/Widget.AppCompat.Button"
         android:layout_width="160dp"
         android:layout_height="141dp"
-        android:layout_marginBottom="164dp"
         android:background="@drawable/my_button"
-        android:text="@string/policyInfo"
+        android:text="@string/takeQuiz"
         android:textColor="#000000"
-        app:iconTint="#000000"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.119"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintBottom_toTopOf="@+id/policyButton"
+        app:layout_constraintEnd_toStartOf="@+id/partyButton"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView18" />
 
     <ImageButton
         android:id="@+id/settingsButton"
         android:layout_width="74dp"
         android:layout_height="56dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="24dp"
         android:background="@android:color/transparent"
         android:scaleType="fitCenter"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/policyButton"
         app:srcCompat="@drawable/settings_vector" />
 
-    <ImageView
-        android:id="@+id/imageView18"
-        android:layout_width="357dp"
-        android:layout_height="141dp"
-        android:layout_marginBottom="16dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.476"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.158"
-        app:srcCompat="@drawable/logo_3" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="-33dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
