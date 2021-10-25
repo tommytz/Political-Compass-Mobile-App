@@ -46,25 +46,25 @@ class NationalPolicyInfo : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        var policyText : TextView = requireActivity().findViewById(R.id.nationalPolicyText)
-        if (buttonPressed == "environment") {
-            policyText.setText(R.string.nationalEnvironment)
-        }
-        else if (buttonPressed == "housing") {
-            policyText.setText(R.string.nationalHousing)
-        }
-        else if (buttonPressed == "education") {
-            policyText.setText(R.string.nationalEducation)
-        }
-        else if (buttonPressed == "economy") {
-            policyText.setText(R.string.nationalEconomy)
-        }
-        else if (buttonPressed == "health") {
-            policyText.setText(R.string.nationalHealth)
-        }
-        else if (buttonPressed == "infrastructure") {
-            policyText.setText(R.string.nationalInfrastructure)
-        }
+//        var policyText : TextView = requireActivity().findViewById(R.id.nationalPolicyText)
+//        if (buttonPressed == "environment") {
+//            policyText.setText(R.string.nationalEnvironment)
+//        }
+//        else if (buttonPressed == "housing") {
+//            policyText.setText(R.string.nationalHousing)
+//        }
+//        else if (buttonPressed == "education") {
+//            policyText.setText(R.string.nationalEducation)
+//        }
+//        else if (buttonPressed == "economy") {
+//            policyText.setText(R.string.nationalEconomy)
+//        }
+//        else if (buttonPressed == "health") {
+//            policyText.setText(R.string.nationalHealth)
+//        }
+//        else if (buttonPressed == "infrastructure") {
+//            policyText.setText(R.string.nationalInfrastructure)
+//        }
 
     }
 

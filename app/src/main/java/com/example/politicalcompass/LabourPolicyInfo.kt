@@ -46,25 +46,25 @@ class LabourPolicyInfo : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        var policyText : TextView = requireActivity().findViewById(R.id.labourPolicyText)
-        if (buttonPressed == "environment") {
-            policyText.setText(R.string.labourEnvironment)
-        }
-        else if (buttonPressed == "housing") {
-            policyText.setText(R.string.labourHousing)
-        }
-        else if (buttonPressed == "education") {
-            policyText.setText(R.string.labourEducation)
-        }
-        else if (buttonPressed == "economy") {
-            policyText.setText(R.string.labourEconomy)
-        }
-        else if (buttonPressed == "health") {
-            policyText.setText(R.string.labourHealth)
-        }
-        else if (buttonPressed == "infrastructure") {
-            policyText.setText(R.string.labourInfrastructure)
-        }
+//        var policyText : TextView = requireActivity().findViewById(R.id.labourPolicyText)
+//        if (buttonPressed == "environment") {
+//            policyText.setText(R.string.labourEnvironment)
+//        }
+//        else if (buttonPressed == "housing") {
+//            policyText.setText(R.string.labourHousing)
+//        }
+//        else if (buttonPressed == "education") {
+//            policyText.setText(R.string.labourEducation)
+//        }
+//        else if (buttonPressed == "economy") {
+//            policyText.setText(R.string.labourEconomy)
+//        }
+//        else if (buttonPressed == "health") {
+//            policyText.setText(R.string.labourHealth)
+//        }
+//        else if (buttonPressed == "infrastructure") {
+//            policyText.setText(R.string.labourInfrastructure)
+//        }
 
     }
 

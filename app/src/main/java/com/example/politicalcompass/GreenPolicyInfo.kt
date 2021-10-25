@@ -46,25 +46,25 @@ class GreenPolicyInfo : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        var policyText : TextView = requireActivity().findViewById(R.id.greenPolicyText)
-        if (buttonPressed == "environment") {
-            policyText.setText(R.string.greenEnvironment)
-        }
-        else if (buttonPressed == "housing") {
-            policyText.setText(R.string.greenHousing)
-        }
-        else if (buttonPressed == "education") {
-            policyText.setText(R.string.greenEducation)
-        }
-        else if (buttonPressed == "economy") {
-            policyText.setText(R.string.greenEconomy)
-        }
-        else if (buttonPressed == "health") {
-            policyText.setText(R.string.greenHealth)
-        }
-        else if (buttonPressed == "infrastructure") {
-            policyText.setText(R.string.greenInfrastructure)
-        }
+//        var policyText : TextView = requireActivity().findViewById(R.id.greenPolicyText)
+//        if (buttonPressed == "environment") {
+//            policyText.setText(R.string.greenEnvironment)
+//        }
+//        else if (buttonPressed == "housing") {
+//            policyText.setText(R.string.greenHousing)
+//        }
+//        else if (buttonPressed == "education") {
+//            policyText.setText(R.string.greenEducation)
+//        }
+//        else if (buttonPressed == "economy") {
+//            policyText.setText(R.string.greenEconomy)
+//        }
+//        else if (buttonPressed == "health") {
+//            policyText.setText(R.string.greenHealth)
+//        }
+//        else if (buttonPressed == "infrastructure") {
+//            policyText.setText(R.string.greenInfrastructure)
+//        }
 
     }
 

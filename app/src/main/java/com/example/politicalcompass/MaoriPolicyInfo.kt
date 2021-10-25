@@ -46,25 +46,25 @@ class MaoriPolicyInfo : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        var policyText : TextView = requireActivity().findViewById(R.id.maoriPolicyText)
-        if (buttonPressed == "environment") {
-            policyText.setText(R.string.maoriEnvironment)
-        }
-        else if (buttonPressed == "housing") {
-            policyText.setText(R.string.maoriHousing)
-        }
-        else if (buttonPressed == "education") {
-            policyText.setText(R.string.maoriEducation)
-        }
-        else if (buttonPressed == "economy") {
-            policyText.setText(R.string.maoriEconomy)
-        }
-        else if (buttonPressed == "health") {
-            policyText.setText(R.string.maoriHealth)
-        }
-        else if (buttonPressed == "infrastructure") {
-            policyText.setText(R.string.maoriInfrastructure)
-        }
+//        var policyText : TextView = requireActivity().findViewById(R.id.maoriPolicyText)
+//        if (buttonPressed == "environment") {
+//            policyText.setText(R.string.maoriEnvironment)
+//        }
+//        else if (buttonPressed == "housing") {
+//            policyText.setText(R.string.maoriHousing)
+//        }
+//        else if (buttonPressed == "education") {
+//            policyText.setText(R.string.maoriEducation)
+//        }
+//        else if (buttonPressed == "economy") {
+//            policyText.setText(R.string.maoriEconomy)
+//        }
+//        else if (buttonPressed == "health") {
+//            policyText.setText(R.string.maoriHealth)
+//        }
+//        else if (buttonPressed == "infrastructure") {
+//            policyText.setText(R.string.maoriInfrastructure)
+//        }
 
     }
 

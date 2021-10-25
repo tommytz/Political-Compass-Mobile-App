@@ -46,25 +46,25 @@ class ActPolicyInfo : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        var policyText : TextView = requireActivity().findViewById(R.id.actPolicyText)
-        if (buttonPressed == "environment") {
-            policyText.setText(R.string.actEnvironment)
-        }
-        else if (buttonPressed == "housing") {
-            policyText.setText(R.string.actHousing)
-        }
-        else if (buttonPressed == "education") {
-            policyText.setText(R.string.actEducation)
-        }
-        else if (buttonPressed == "economy") {
-            policyText.setText(R.string.actEconomy)
-        }
-        else if (buttonPressed == "health") {
-            policyText.setText(R.string.actHealth)
-        }
-        else if (buttonPressed == "infrastructure") {
-            policyText.setText(R.string.actInfrastructure)
-        }
+//        var policyText : TextView = requireActivity().findViewById(R.id.actPolicyText)
+//        if (buttonPressed == "environment") {
+//            policyText.setText(R.string.actEnvironment)
+//        }
+//        else if (buttonPressed == "housing") {
+//            policyText.setText(R.string.actHousing)
+//        }
+//        else if (buttonPressed == "education") {
+//            policyText.setText(R.string.actEducation)
+//        }
+//        else if (buttonPressed == "economy") {
+//            policyText.setText(R.string.actEconomy)
+//        }
+//        else if (buttonPressed == "health") {
+//            policyText.setText(R.string.actHealth)
+//        }
+//        else if (buttonPressed == "infrastructure") {
+//            policyText.setText(R.string.actInfrastructure)
+//        }
 
     }
 
