@@ -4,14 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/bgBlue">
+    android:background="#09064E">
 
     <TextView
         android:id="@+id/policyTitleText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/policyTitle"
-        android:textColor="#FFFFFF"
+        android:textColor="#FFFEFE"
         android:textSize="48sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -21,22 +21,36 @@
 
     <Button
         android:id="@+id/environmentButton"
-        android:layout_width="360dp"
-        android:layout_height="64dp"
-        android:layout_marginTop="212dp"
+        android:layout_width="163dp"
+        android:layout_height="101dp"
         android:text="@string/environmentButton"
         android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.064"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.285" />
 
     <Button
         android:id="@+id/housingButton"
-        android:layout_width="358dp"
-        android:layout_height="64dp"
-        android:layout_marginTop="60dp"
+        android:layout_width="163dp"
+        android:layout_height="101dp"
         android:text="@string/housingButton"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.935"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.285" />
+
+    <Button
+        android:id="@+id/educationButton"
+        android:layout_width="163dp"
+        android:layout_height="101dp"
+        android:layout_marginTop="60dp"
+        android:text="@string/educationButton"
         android:textColor="#000000"
         app:layout_constraintEnd_toEndOf="@+id/environmentButton"
         app:layout_constraintStart_toStartOf="@+id/environmentButton"

@@ -19,7 +19,7 @@ class PolicyActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-        val housingButton : Button = findViewById(R.id.housingButton)
+        val housingButton : Button = findViewById(R.id.educationButton)
         housingButton.setOnClickListener {
             val intent = Intent(this, PolicyInfoActivity::class.java).apply {
                 putExtra("message", "housing pressed")

@@ -31,6 +31,3 @@ class PartyActivity : AppCompatActivity() {
         fragmentTransaction.commit()
     }
 }
-
-
-

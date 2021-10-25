@@ -21,6 +21,7 @@
     <string name="policyTitle">Policy Info</string>
     <string name="environmentButton">Environment</string>
     <string name="housingButton">Housing</string>
+    <string name="educationButton">Education</string>
     <string name="test1">environment pressed</string>
     <string name="test2">housing pressed</string>
 
