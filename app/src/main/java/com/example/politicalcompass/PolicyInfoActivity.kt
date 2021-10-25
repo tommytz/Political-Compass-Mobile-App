@@ -2,20 +2,32 @@ package com.example.politicalcompass
 
 import android.os.Bundle
 import android.view.View
-import android.widget.Button
-import android.widget.LinearLayout
-import android.widget.TextView
+import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
+import androidx.fragment.app.Fragment
 
 class PolicyInfoActivity : AppCompatActivity() {
+    private val partyFragmentList = listOf<Fragment>(LabourPolicyInfo(), NationalPolicyInfo(), GreenPolicyInfo(), ActPolicyInfo(), MaoriPolicyInfo())
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.policy_info_activity)
+        setContentView(R.layout.party_activity)
 
+        // Code to set up the dropdown menu and the on click listener
+        val partyMenu : AutoCompleteTextView = findViewById(R.id.menu)
+        val parties = resources.getStringArray(R.array.parties)
+        val adapter = ArrayAdapter(this, R.layout.list_item, parties)
+        partyMenu.setAdapter(adapter)
+        partyMenu.onItemClickListener = AdapterView.OnItemClickListener{ _: AdapterView<*>?, _: View?, position: Int, _: Long -> replacePartyFragment(position)}
+    }
 
-
-        val text : TextView = findViewById(R.id.test)
-        text.setText(getIntent().getStringExtra("message"))
+    /* This function takes the input from the menu on click listener and uses it to
+       change fragments in the view so that different party info can be displayed. */
+    private fun replacePartyFragment(position : Int){
+        val fragmentManager = supportFragmentManager
+        val fragmentTransaction = fragmentManager.beginTransaction()
+        fragmentTransaction.replace(R.id.partyFragments, partyFragmentList[position])
+        fragmentTransaction.commit()
     }
 
 }

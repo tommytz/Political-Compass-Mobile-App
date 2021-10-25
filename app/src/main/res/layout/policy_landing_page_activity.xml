@@ -57,4 +57,40 @@
         app:layout_constraintStart_toStartOf="@+id/environmentButton"
         app:layout_constraintTop_toBottomOf="@+id/environmentButton" />
 
+    <Button
+        android:id="@+id/economyButton"
+        android:layout_width="160dp"
+        android:layout_height="141dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/economyButton"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="@+id/housingButton"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/housingButton"
+        app:layout_constraintTop_toBottomOf="@+id/housingButton" />
+
+    <Button
+        android:id="@+id/infrastructureButton"
+        android:layout_width="160dp"
+        android:layout_height="141dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/infrastructureButton"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="@+id/economyButton"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/economyButton"
+        app:layout_constraintTop_toBottomOf="@+id/economyButton" />
+
+    <Button
+        android:id="@+id/healthButton"
+        android:layout_width="160dp"
+        android:layout_height="141dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/healthButton"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="@+id/educationButton"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/educationButton"
+        app:layout_constraintTop_toBottomOf="@+id/educationButton" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
