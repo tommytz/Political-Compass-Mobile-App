@@ -10,8 +10,8 @@
 
     <TextView
         android:id="@+id/quiz_question"
-        android:layout_width="394dp"
-        android:layout_height="50dp"
+        android:layout_width="398dp"
+        android:layout_height="71dp"
         android:background="@drawable/my_button"
         android:backgroundTint="#FFFFFF"
         android:fontFamily="sans-serif-light"
@@ -20,7 +20,7 @@
         android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         android:textColor="#000000"
-        android:textSize="24sp"
+        android:textSize="22sp"
         app:layout_constraintBottom_toTopOf="@+id/radio_group"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -89,7 +89,7 @@
         android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/radio_group" />
 

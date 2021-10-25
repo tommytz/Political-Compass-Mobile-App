@@ -1,37 +1,64 @@
 package com.example.politicalcompass
 
-import androidx.fragment.app.Fragment
-
 class QuizResult(private val answers: HashMap<Int, String>) {
-    private val partyFragmentList = listOf<Fragment>(LabourPartyInfo(), NationalPartyInfo(), GreenPartyInfo(), ACTInfo(), MaoriPartyInfo())
-    private var vertical = 0
-    private var horizontal = 0
+    var vertical = 0
+    var horizontal = 0
 
-   fun score() : Fragment {
+    val LABOUR: Int = 0
+    val NATIONAL: Int = 1
+    val GREEN: Int = 2
+    val ACT: Int = 3
+    val MAORI: Int = 4
+    val GARFIELD: Int = 5
+
+    fun score(): Int {
         for (i in answers.keys) {
-            val answer = answers[i]
+            val answerString = answers[i]
             if (i == 1) {
-                verticalDown(answer)
+                horizontalRight(answerString) //economic right
+                verticalDown(answerString) //libertarian
             }
             if (i == 2) {
-                horizontalUp(answer)
+                verticalDown(answerString) //libertarian
+                horizontalLeft(answerString) //economic left
+
             }
             if (i == 3) {
-                horizontalDown(answer)
+                horizontalRight(answerString) //economic right
+                verticalUp(answerString) //authoritarian
             }
             if (i == 4) {
-                verticalUp(answer)
+                horizontalLeft(answerString) //economic left
+                verticalUp(answerString) //authoritarian
             }
         }
-       return partyResult(vertical, horizontal)
-       // This is the part that needs work
+        return partyResult(vertical, horizontal)
     }
 
-    private fun partyResult(verticalScore : Int, horizontalScore : Int) : Fragment {
-        return partyFragmentList[0] // Placeholder until we put logic in...
+    private fun partyResult(verticalScore: Int, horizontalScore: Int): Int {
+
+        if (horizontalScore <= -4 && horizontalScore >= 2) {
+            return LABOUR
+        }
+        if (verticalScore >= 5 && horizontalScore <= -4) {
+            return GREEN
+        }
+        if (verticalScore >= 4 && horizontalScore <= -5) {
+            return MAORI
+        }
+        if (verticalScore >= -2 && horizontalScore >= 3) {
+            return NATIONAL
+        }
+        if (horizontalScore <= -2 && horizontalScore >= 6) {
+            return NATIONAL
+        }
+        if (verticalScore >= -3 && horizontalScore >= 6) {
+            return ACT
+        }
+        return GARFIELD
     }
 
-    private fun horizontalUp(answer: String?) {
+    fun horizontalRight(answer: String?) {
         if (answer.equals("Strongly Agree", ignoreCase = true)) {
             horizontal += 2
         }
@@ -46,7 +73,7 @@ class QuizResult(private val answers: HashMap<Int, String>) {
         }
     }
 
-    private fun horizontalDown(answer: String?) {
+    fun horizontalLeft(answer: String?) {
         if (answer.equals("Strongly Agree", ignoreCase = true)) {
             horizontal -= 2
         }
@@ -61,7 +88,7 @@ class QuizResult(private val answers: HashMap<Int, String>) {
         }
     }
 
-    private fun verticalUp(answer: String?) {
+    fun verticalUp(answer: String?) {
         if (answer.equals("Strongly Agree", ignoreCase = true)) {
             vertical += 2
         }
@@ -76,7 +103,7 @@ class QuizResult(private val answers: HashMap<Int, String>) {
         }
     }
 
-    private fun verticalDown(answer: String?) {
+    fun verticalDown(answer: String?) {
         if (answer.equals("Strongly Agree", ignoreCase = true)) {
             vertical -= 2
         }
@@ -90,4 +117,6 @@ class QuizResult(private val answers: HashMap<Int, String>) {
             vertical += 2
         }
     }
+
+
 }

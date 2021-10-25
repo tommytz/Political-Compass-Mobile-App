@@ -1,10 +1,10 @@
 package com.example.politicalcompass
 
 import android.os.Bundle
+import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.fragment.app.Fragment
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -13,10 +13,10 @@ private const val ARG_PARAM2 = "param2"
 
 /**
  * A simple [Fragment] subclass.
- * Use the [ACTInfo.newInstance] factory method to
+ * Use the [GarfieldInfo.newInstance] factory method to
  * create an instance of this fragment.
  */
-class ACTInfo : Fragment() {
+class GarfieldInfo : Fragment() {
     // TODO: Rename and change types of parameters
     private var param1: String? = null
     private var param2: String? = null
@@ -34,7 +34,7 @@ class ACTInfo : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_act_party_info, container, false)
+        return inflater.inflate(R.layout.fragment_garfield_party_info, container, false)
     }
 
     companion object {
@@ -49,7 +49,7 @@ class ACTInfo : Fragment() {
         // TODO: Rename and change types and number of parameters
         @JvmStatic
         fun newInstance(param1: String, param2: String) =
-            ACTInfo().apply {
+            GarfieldInfo().apply {
                 arguments = Bundle().apply {
                     putString(ARG_PARAM1, param1)
                     putString(ARG_PARAM2, param2)

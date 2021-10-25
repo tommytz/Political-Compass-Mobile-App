@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FFFFFF"
-    tools:context=".MaoriPartyInfo">
+    tools:context=".GarfieldInfo">
 
     <!-- TODO: Update blank fragment layout -->
 
@@ -27,13 +27,13 @@
                 android:layout_height="290dp">
 
                 <ImageView
-                    android:id="@+id/imageView"
+                    android:id="@+id/imageView5"
                     android:layout_width="wrap_content"
-                    android:layout_marginTop="65dp"
+                    android:layout_height="159dp"
+                    android:layout_marginTop="20dp"
                     android:scaleType="fitCenter"
-                    android:layout_height="wrap_content"
                     android:padding="10dp"
-                    android:src="@drawable/ic_new_zealand_labour_party_logo" />
+                    android:src="@drawable/pinclipart_com_garfield_clipart_495940" />
             </TableRow>
 
             <TableRow
@@ -45,7 +45,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:padding="20dp"
-                    android:text="@string/labourInfo"
+                    android:text="@string/garfieldInfo"
                     android:textSize="16sp" />
             </TableRow>
 
