@@ -45,7 +45,8 @@ class ElectorateActivityNorth : AppCompatActivity() {
                 val intent = Intent(this, ElectorateActivityWellington::class.java)
                 startActivity(intent)
             } else {
-                Toast.makeText(this, "That ain't it", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "Wellington is a pretty cool place.", Toast.LENGTH_SHORT)
+                    .show()
             }
         }
 
