@@ -26,12 +26,10 @@
                 android:layout_height="290dp">
 
                 <ImageView
-                    android:id="@+id/imageView"
+                    android:id="@+id/imageView23"
                     android:layout_width="wrap_content"
-                    android:layout_height="126dp"
-                    android:layout_marginTop="16dp"
-                    android:padding="10dp"
-                    android:src="@drawable/ic_new_zealand_labour_party_logo" />
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_act_new_zealand_cmyk" />
             </TableRow>
 
             <TableRow
@@ -43,7 +41,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:padding="20dp"
-                    android:text="@string/labourInfo"
+                    android:text="@string/actInfo"
                     android:textSize="16sp" />
             </TableRow>
 
@@ -52,10 +50,10 @@
                 android:layout_height="match_parent">
 
                 <ImageView
-                    android:id="@+id/imageView13"
+                    android:id="@+id/imageView24"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/screen_shot_2021_10_25_at_4_32_12_pm" />
+                    android:src="@drawable/screen_shot_2021_10_25_at_6_37_06_pm" />
             </TableRow>
 
             <TableRow
@@ -63,10 +61,10 @@
                 android:layout_height="match_parent" >
 
                 <ImageView
-                    android:id="@+id/imageView14"
+                    android:id="@+id/imageView25"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/screen_shot_2021_10_25_at_4_32_16_pm" />
+                    android:src="@drawable/screen_shot_2021_10_25_at_6_37_11_pm" />
             </TableRow>
 
             <TableRow
@@ -74,10 +72,10 @@
                 android:layout_height="17dp" >
 
                 <ImageView
-                    android:id="@+id/imageView11"
+                    android:id="@+id/imageView26"
                     android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:src="@drawable/screen_shot_2021_10_25_at_4_27_56_pm" />
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/screen_shot_2021_10_25_at_6_37_43_pm" />
             </TableRow>
 
             <TableRow
@@ -85,10 +83,10 @@
                 android:layout_height="match_parent">
 
                 <ImageView
-                    android:id="@+id/imageView12"
+                    android:id="@+id/imageView27"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/screen_shot_2021_10_25_at_4_28_07_pm" />
+                    android:src="@drawable/screen_shot_2021_10_25_at_6_37_47_pm" />
             </TableRow>
 
             <TableRow
