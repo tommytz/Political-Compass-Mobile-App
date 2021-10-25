@@ -8,6 +8,7 @@
         <entry key="app/src/main/res/drawable/my_button.xml" value="0.26974358974358975" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.33" />
         <entry key="app/src/main/res/layout/activity_quiz_result.xml" value="0.221875" />
+        <entry key="app/src/main/res/layout/fragment_act_info.xml" value="0.221875" />
         <entry key="app/src/main/res/layout/fragment_act_party_info.xml" value="0.19384057971014493" />
         <entry key="app/src/main/res/layout/fragment_default_party.xml" value="0.19791666666666666" />
         <entry key="app/src/main/res/layout/fragment_green_party_info.xml" value="0.19791666666666666" />
