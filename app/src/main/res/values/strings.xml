@@ -22,8 +22,45 @@
     <string name="environmentButton">Environment</string>
     <string name="housingButton">Housing</string>
     <string name="educationButton">Education</string>
-    <string name="test1">environment pressed</string>
-    <string name="test2">housing pressed</string>
+    <string name="healthButton">Health</string>
+    <string name="economyButton">Economy</string>
+    <string name="infrastructureButton">Infrastructure</string>
+
+    <string name="labourEnvironment">Default Labour Environment Text</string>
+    <string name="labourHousing">Default Labour Housing Text</string>
+    <string name="labourEducation">Default Labour Education Text</string>
+    <string name="labourEconomy">Default Labour Economy Text</string>
+    <string name="labourHealth">Default Labour Health Text</string>
+    <string name="labourInfrastructure">Default Labour Infrastructure Text</string>
+
+    <string name="nationalEnvironment">Default National Environment Text</string>
+    <string name="nationalHousing">Default National Housing Text</string>
+    <string name="nationalEducation">Default National Education Text</string>
+    <string name="nationalEconomy">Default National Economy Text</string>
+    <string name="nationalHealth">Default National Health Text</string>
+    <string name="nationalInfrastructure">Default National Infrastructure Text</string>
+
+    <string name="greenEnvironment">Default Green Environment Text</string>
+    <string name="greenHousing">Default Green Housing Text</string>
+    <string name="greenEducation">Default Green Education Text</string>
+    <string name="greenEconomy">Default Green Economy Text</string>
+    <string name="greenHealth">Default Green Health Text</string>
+    <string name="greenInfrastructure">Default Green Infrastructure Text</string>
+
+    <string name="actEnvironment">Default ACT Environment Text</string>
+    <string name="actHousing">Default ACT Housing Text</string>
+    <string name="actEducation">Default ACT Education Text</string>
+    <string name="actEconomy">Default ACT Economy Text</string>
+    <string name="actHealth">Default ACT Health Text</string>
+    <string name="actInfrastructure">Default ACT Infrastructure Text</string>
+
+    <string name="maoriEnvironment">Default Maori Environment Text</string>
+    <string name="maoriHousing">Default Maori Housing Text</string>
+    <string name="maoriEducation">Default Maori Education Text</string>
+    <string name="maoriEconomy">Default Maori Economy Text</string>
+    <string name="maoriHealth">Default Maori Health Text</string>
+    <string name="maoriInfrastructure">Default Maori Infrastructure Text</string>
+
 
     <string-array name="parties">
         <item>Labour Party</item>
