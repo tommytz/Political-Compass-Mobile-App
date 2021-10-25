@@ -54,44 +54,19 @@
                 android:layout_height="match_parent">
 
                 <ImageView
-                    android:id="@+id/imageView13"
+                    android:id="@+id/imageView28"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/screen_shot_2021_10_25_at_4_32_12_pm" />
+                    android:src="@drawable/garfield_leader" />
             </TableRow>
 
             <TableRow
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <ImageView
-                    android:id="@+id/imageView14"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/screen_shot_2021_10_25_at_4_32_16_pm" />
-            </TableRow>
+                android:layout_height="17dp"/>
 
             <TableRow
                 android:layout_width="match_parent"
-                android:layout_height="17dp">
-
-                <ImageView
-                    android:id="@+id/imageView11"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:src="@drawable/screen_shot_2021_10_25_at_4_27_56_pm" />
-            </TableRow>
-
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <ImageView
-                    android:id="@+id/imageView12"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/screen_shot_2021_10_25_at_4_28_07_pm" />
-            </TableRow>
+                android:layout_height="match_parent"/>
 
             <TableRow
                 android:layout_width="match_parent"
