@@ -30,6 +30,8 @@
                     android:id="@+id/imageView23"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
+                    android:layout_marginTop="80dp"
+                    android:scaleType="fitCenter"
                     android:src="@drawable/ic_act_new_zealand_cmyk" />
             </TableRow>
 
