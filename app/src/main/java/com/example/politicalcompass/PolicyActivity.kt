@@ -9,6 +9,7 @@ import androidx.appcompat.app.AppCompatActivity
 class PolicyActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        supportActionBar?.hide()
         setContentView(R.layout.policy_landing_page_activity)
 
         val environmentButton : Button = findViewById(R.id.environmentButton)

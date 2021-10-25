@@ -4,7 +4,6 @@ import android.app.Activity
 import android.content.SharedPreferences
 import android.content.res.Configuration
 import android.os.Bundle
-import android.view.ContextThemeWrapper
 import androidx.appcompat.app.AppCompatActivity
 import java.util.*
 
@@ -14,6 +13,7 @@ class BlankActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         loadLocale()
+        supportActionBar?.hide()
         setContentView(R.layout.blank_layout)
         supportFragmentManager.beginTransaction().replace(android.R.id.content, SettingsFragment())
             .commit()

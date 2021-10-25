@@ -18,6 +18,7 @@ class ElectorateActivityNorth : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        supportActionBar?.hide()
         setContentView(R.layout.electorate_map_north)
 
 
