@@ -8,12 +8,13 @@
         android:id="@+id/actPolicyText"
         android:layout_width="305dp"
         android:layout_height="433dp"
+        android:background="#FFFFFF"
         android:text="@string/filler"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView10" />
 
     <ImageView
         android:id="@+id/imageView10"

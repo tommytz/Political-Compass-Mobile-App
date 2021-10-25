@@ -8,6 +8,7 @@
         android:id="@+id/maoriPolicyText"
         android:layout_width="308dp"
         android:layout_height="406dp"
+        android:background="#F8F8F8"
         android:text="@string/filler"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

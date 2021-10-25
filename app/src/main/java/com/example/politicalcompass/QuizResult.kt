@@ -37,22 +37,22 @@ class QuizResult(private val answers: HashMap<Int, String>) {
 
     private fun partyResult(verticalScore: Int, horizontalScore: Int): Int {
 
-        if (horizontalScore <= -4 && horizontalScore >= 2) {
+        if (horizontalScore <= -2 && horizontalScore >= 0) {
             return LABOUR
         }
-        if (verticalScore >= 5 && horizontalScore <= -4) {
+        if (verticalScore >= 3 && horizontalScore <= -2) {
             return GREEN
         }
-        if (verticalScore >= 4 && horizontalScore <= -5) {
+        if (verticalScore >= 2 && horizontalScore <= -3) {
             return MAORI
         }
-        if (verticalScore >= -2 && horizontalScore >= 3) {
+        if (verticalScore >= -0 && horizontalScore >= 1) {
             return NATIONAL
         }
-        if (horizontalScore <= -2 && horizontalScore >= 6) {
+        if (horizontalScore <= -0 && horizontalScore >= 4) {
             return NATIONAL
         }
-        if (verticalScore >= -3 && horizontalScore >= 6) {
+        if (verticalScore >= -1 && horizontalScore >= 4) {
             return ACT
         }
         return GARFIELD
