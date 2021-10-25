@@ -1,9 +1,10 @@
 <resources>
     <string name="app_name">PoliticalCompass</string>
     <string name="landingTitle">Political Compass</string>
-    <string name="firstQuestion">Do you like plants?</string>
-    <string name="secondQuestion">Do you like Orange?</string>
-    <string name="thirdQuestion">Would you remember to release policy?</string>
+    <string name="firstQuestion">Do you think poor people deserve to be poor?</string>
+    <string name="secondQuestion">Do you think women should have the right to control their body?</string>
+    <string name="thirdQuestion">Do you like war?</string>
+    <string name="forthQuestion">Should living be free?</string>
     <string name="takeQuiz">Take Quiz</string>
     <string name="partyInfo">Parties</string>
     <string name="policyInfo">Policies</string>

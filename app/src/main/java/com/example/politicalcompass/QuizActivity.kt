@@ -28,9 +28,20 @@ class QuizActivity : AppCompatActivity() {
         addAnswer(questionCount, answer as String) // need to have a count for question
         radioGroup.clearCheck()
 
+
+        if (questionCount == 1){
+            questionText.text = R.string.secondQuestion.toString()
+        }
+        if (questionCount == 2){
+            questionText.text = R.string.thirdQuestion.toString()
+        }
+        if (questionCount == 3){
+            questionText.text = R.string.forthQuestion.toString()
+        }
         if (questionCount <= 4) {
             println("Questions answered: $questionCount") // We should ideally be using this to cycle through the questions
-        } else {
+        }
+        else {
             result(questionText)
         }
         questionCount++

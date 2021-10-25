@@ -1,37 +1,34 @@
 package com.example.politicalcompass
 
-import androidx.fragment.app.Fragment
+class QuizResult(val answers: HashMap<Int, String>) {
+    var vertical = 0
+    var horizontal = 0
 
-class QuizResult(private val answers: HashMap<Int, String>) {
-    private val partyFragmentList = listOf<Fragment>(LabourPartyInfo(), NationalPartyInfo(), GreenPartyInfo(), ACTInfo(), MaoriPartyInfo())
-    private var vertical = 0
-    private var horizontal = 0
 
-   fun score() : Fragment {
+    fun score() {
         for (i in answers.keys) {
-            val answer = answers[i]
+            val s = answers[i]
             if (i == 1) {
-                verticalDown(answer)
+                horizontalRight(s) //economic right
+                verticalDown(s) //libertarian
             }
             if (i == 2) {
-                horizontalUp(answer)
+                verticalDown(s) //libertarian
+                horizontalLeft(s) //economic left
+
             }
             if (i == 3) {
-                horizontalDown(answer)
+                horizontalRight(s) //economic right
+                verticalUp(s) //authoritarian
             }
             if (i == 4) {
-                verticalUp(answer)
+                horizontalLeft(s) //economic left
+                verticalUp(s) //authoritarian
             }
         }
-       return partyResult(vertical, horizontal)
-       // This is the part that needs work
     }
 
-    private fun partyResult(verticalScore : Int, horizontalScore : Int) : Fragment {
-        return partyFragmentList[0] // Placeholder until we put logic in...
-    }
-
-    private fun horizontalUp(answer: String?) {
+    fun horizontalRight(answer: String?) {
         if (answer.equals("Strongly Agree", ignoreCase = true)) {
             horizontal += 2
         }
@@ -46,7 +43,7 @@ class QuizResult(private val answers: HashMap<Int, String>) {
         }
     }
 
-    private fun horizontalDown(answer: String?) {
+    fun horizontalLeft(answer: String?) {
         if (answer.equals("Strongly Agree", ignoreCase = true)) {
             horizontal -= 2
         }
@@ -61,7 +58,7 @@ class QuizResult(private val answers: HashMap<Int, String>) {
         }
     }
 
-    private fun verticalUp(answer: String?) {
+    fun verticalUp(answer: String?) {
         if (answer.equals("Strongly Agree", ignoreCase = true)) {
             vertical += 2
         }
@@ -76,7 +73,7 @@ class QuizResult(private val answers: HashMap<Int, String>) {
         }
     }
 
-    private fun verticalDown(answer: String?) {
+    fun verticalDown(answer: String?) {
         if (answer.equals("Strongly Agree", ignoreCase = true)) {
             vertical -= 2
         }
