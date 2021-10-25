@@ -12,10 +12,11 @@
         android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:paddingTop="16dp"
         android:text="Quiz Result"
         android:textAlignment="center"
         android:textColor="@color/light_gray"
-        android:textSize="34sp"
+        android:textSize="48sp"
         app:layout_constraintBottom_toTopOf="@+id/resultFragmentContainer"
         app:layout_constraintTop_toTopOf="parent"
         tools:layout_editor_absoluteX="97dp" />

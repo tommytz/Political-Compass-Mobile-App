@@ -14,7 +14,7 @@
         android:layout_height="wrap_content"
         android:background="@drawable/my_button"
         android:backgroundTint="#00FFFFFF"
-        android:fontFamily="sans-serif-light"
+        android:fontFamily="sans-serif-medium"
         android:lineSpacingExtra="8sp"
         android:text="@string/firstQuestion"
         android:textAlignment="center"
