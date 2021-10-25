@@ -64,6 +64,7 @@
         <activity
             android:name=".BlankActivity"
             android:label="@string/app_name">
+<!--            android:theme="PreferenceScreen">-->
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />
