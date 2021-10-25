@@ -20,20 +20,27 @@ class QuizActivity : AppCompatActivity() {
         val question: TextView = findViewById(R.id.quiz_question)
         val radioGroup: RadioGroup = findViewById(R.id.radio_group)
 
+        //selectedRadioButtonID is -1 if nothing is selected
         val selectedRadioButtonId: Int = radioGroup.checkedRadioButtonId
-        val checkedRadioButton: RadioButton = findViewById(selectedRadioButtonId)
+        if (selectedRadioButtonId == -1) {
+            Toast.makeText(this, "Please select option before continuing", Toast.LENGTH_SHORT)
+                .show()
+        } else {
+            val checkedRadioButton: RadioButton = findViewById(selectedRadioButtonId)
 
-        // Save answer to map
-        val answer = checkedRadioButton.text
-        addAnswer(questionCount, answer as String) // need to have a count for question
-        radioGroup.clearCheck()
+            // Save answer to map
+            val answer = checkedRadioButton.text
 
-        // Increment question and change question string accordingly
-        questionCount++
-        if (questionCount > 4) {
-            result(question)
+            addAnswer(questionCount, answer as String) // need to have a count for question
+            radioGroup.clearCheck()
+
+            // Increment question and change question string accordingly
+            questionCount++
+            if (questionCount > 4) {
+                result(question)
+            }
+            provideQuestionText(question)
         }
-        provideQuestionText(question)
     }
 
     private fun provideQuestionText(questionText: TextView): String {
