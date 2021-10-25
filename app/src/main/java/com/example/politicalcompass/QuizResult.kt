@@ -1,6 +1,6 @@
 package com.example.politicalcompass
 
-class QuizResult(val answers: HashMap<Int, String>) {
+class QuizResult(private val answers: HashMap<Int, String>) {
     var vertical = 0
     var horizontal = 0
 
@@ -26,6 +26,11 @@ class QuizResult(val answers: HashMap<Int, String>) {
                 verticalUp(s) //authoritarian
             }
         }
+        return partyResult(vertical, horizontal)
+    }
+
+    private fun partyResult(verticalScore : Int, horizontalScore : Int) : Fragment {
+        return partyFragmentList[0] // Placeholder until we put logic in...
     }
 
     fun horizontalRight(answer: String?) {
