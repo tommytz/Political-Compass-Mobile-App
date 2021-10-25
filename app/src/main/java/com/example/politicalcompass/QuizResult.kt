@@ -37,7 +37,26 @@ class QuizResult(private val answers: HashMap<Int, String>) {
     }
 
     private fun partyResult(verticalScore : Int, horizontalScore : Int) : Int {
-        return LABOUR
+
+        if (horizontalScore <= -4 && horizontalScore >= 2) {
+            return LABOUR
+        }
+        if (verticalScore >= 5 && horizontalScore <= -4){
+            return GREEN
+        }
+        if (verticalScore >= 4 && horizontalScore <= -5){
+            return MAORI
+        }
+        if (verticalScore >= -2 && horizontalScore >= 3){
+            return NATIONAL
+        }
+        if (horizontalScore <= -2 && horizontalScore >= 6){
+            return NATIONAL
+        }
+        if (verticalScore >= -3 && horizontalScore >= 6){
+            return ACT
+        }
+
     }
 
     fun horizontalRight(answer: String?) {
@@ -99,4 +118,6 @@ class QuizResult(private val answers: HashMap<Int, String>) {
             vertical += 2
         }
     }
+
+
 }
