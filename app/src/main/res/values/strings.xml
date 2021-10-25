@@ -1,25 +1,34 @@
 <resources>
     <string name="app_name">PoliticalCompass</string>
+
+    <!--    Landing page titles-->
     <string name="landingTitle">Political Compass</string>
-    <string name="firstQuestion">Do you think poor people deserve to be poor?</string>
-    <string name="secondQuestion">Do you think women should have the right to control their body?</string>
-    <string name="thirdQuestion">Do you like war?</string>
-    <string name="fourthQuestion">Should living be free?</string>
     <string name="takeQuiz">Take Quiz</string>
     <string name="partyInfo">Parties</string>
     <string name="policyInfo">Policies</string>
     <string name="electorateInfo">Electorates</string>
+
+    <!--    Quiz questions-->
+    <string name="firstQuestion">Do you think poor people deserve to be poor?</string>
+    <string name="secondQuestion">Do you think women should have the right to control their body?</string>
+    <string name="thirdQuestion">Do you like war?</string>
+    <string name="fourthQuestion">Should living be free?</string>
+
+    <!--    Quiz responses-->
     <string name="sAgree">Strongly Agree</string>
     <string name="Agree">Agree</string>
     <string name="neutral">Neutral</string>
     <string name="disagree">Disagree</string>
     <string name="sDisagree">Strongly Disagree</string>
     <string name="next_button">Next</string>
+
+    <!--    Party information text-->
     <string name="labourInfo">The New Zealand Labour Party (Rōpū Reipa o Aotearoa) currently leads the government. It is a centre-left political party, which describes its founding principle as democratic socialism. Labour formed in 1916 out of various socialist parties and trade unions and is the country\'s oldest political party still in existence. Labour has been in government six times and had ten leaders become prime ministers.</string>
     <string name="maoriInfor">The Māori Party (Te Pāti Māori) is a Māori-led and Māori-focussed party currently outside of parliament. It was formed in 2004 in a split from the Labour Party following the passing of the controversial Foreshore and Seabed Act. The party supported the fifth National Government from 2008, holding a number of cabinet portfolios, until its departure from parliament at the 2017 election. The party aims to uphold te Tiriti o Waitangi, achieve mana motuhake (self-determination) for whānau, hapū and iwi, and represent Māori with an independent voice. </string>
-<string name="greenInfo">The Green Party of Aotearoa New Zealand (Te Rōpu Kākāriki o Aotearoa, Niu Tīreni) is a left-wing party focused on environmental and social justice issues and honouring Te Tiriti o Waitangi. It currently supports the government through a confidence and supply agreement, and has three ministers outside of cabinet. The Green Party formed in 1990 from the Values Party and first entered Parliament in 1996 as a part of the Alliance. It stood candidates independently at the 1999 election, and supported the fifth Labour government from 1999 to 2002 and 2005 to 2008.</string>
-
-
+    <string name="greenInfo">The Green Party of Aotearoa New Zealand (Te Rōpu Kākāriki o Aotearoa, Niu Tīreni) is a left-wing party focused on environmental and social justice issues and honouring Te Tiriti o Waitangi. It currently supports the government through a confidence and supply agreement, and has three ministers outside of cabinet. The Green Party formed in 1990 from the Values Party and first entered Parliament in 1996 as a part of the Alliance. It stood candidates independently at the 1999 election, and supported the fifth Labour government from 1999 to 2002 and 2005 to 2008.</string>
+    <string name="nationalInfor">The New Zealand National Party (Rōpū Nāhinara) is currently the main opposition party in parliament. A centre-right party, National tends to be economically liberal and socially conservative, promoting individual freedom, personal responsibility and competitive enterprise. National formed in 1936 as a combination of the Reform and United parties to oppose the growing labour movement. It has been in government five times and had eight leaders become prime minister.</string>
+    <string name="actInfo">The ACT Party (Rōpū ACT) is a right-wing libertarian party that advocates free market policies and reducing the role of government. It currently has one seat in parliament. ACT was formed in 1994 from the Association of Consumers and Taxpayers by former National MP Derek Quigly and former Labour minister of finance Roger Douglas. It has had seats in parliament since 1996 and has held the Epsom electorate since 2005. ACT gave support to the fifth National government from 2008 to 2017 through a confidence and supply agreement.</string>
+    <string name="garfieldInfo">The Garfield Party (Rōpū Garfield), affectionately known as the \'No Mondays Party\' is an anarcho-capatalist party that remains a fringe party within the New Zealand political system. Started in 1976, the party has been advocating for abolition of mondays within the current week, occasionally campaigning to overhauling the entire system, however they have had little success in this being taken up. The parties greatest political opponent, Odie, has played a big role in keeping the party out of governemnt for so many years. </string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
@@ -37,13 +46,6 @@
         <item>ACT</item>
         <item>Māori Party</item>
     </string-array>
-
-    <string name="default_choice">Nothing pressed</string>
-    <string name="labour_choice"></string>
-    <string name="national_choice">National pressed</string>
-    <string name="green_choice">Green pressed</string>
-    <string name="act_choice">ACT pressed</string>
-    <string name="maori_choice">Maori pressed</string>
 
     <string name="filler">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Consequat interdum varius sit amet mattis vulputate enim nulla. Egestas dui id ornare arcu odio ut. Euismod elementum nisi quis eleifend quam adipiscing vitae proin sagittis. Viverra maecenas accumsan lacus vel facilisis volutpat est velit. Phasellus vestibulum lorem sed risus. Dictum fusce ut placerat orci nulla. Tellus id interdum velit laoreet. Convallis posuere morbi leo urna molestie at elementum eu. Ipsum faucibus vitae aliquet nec ullamcorper sit amet risus nullam. Hac habitasse platea dictumst quisque sagittis. Pellentesque id nibh tortor id aliquet. Velit ut tortor pretium viverra. Amet mauris commodo quis imperdiet. Arcu odio ut sem nulla pharetra. Consequat interdum varius sit amet. Massa id neque aliquam vestibulum morbi blandit cursus. Morbi tincidunt ornare massa eget egestas. Ac feugiat sed lectus vestibulum.</string>
 

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FFFFFF"
-    tools:context=".MaoriPartyInfo">
+    tools:context=".GarfieldInfo">
 
     <!-- TODO: Update blank fragment layout -->
 
@@ -27,10 +27,11 @@
                 android:layout_height="290dp">
 
                 <ImageView
-                    android:id="@+id/imageView9"
+                    android:id="@+id/imageView5"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/ic_green_party_of_aotearoa_new_zealand_logo" />
+                    android:layout_height="159dp"
+                    android:padding="10dp"
+                    android:src="@drawable/pinclipart_com_garfield_clipart_495940" />
             </TableRow>
 
             <TableRow
@@ -42,7 +43,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:padding="20dp"
-                    android:text="@string/greenInfo"
+                    android:text="@string/garfieldInfo"
                     android:textSize="16sp" />
             </TableRow>
 
@@ -51,10 +52,10 @@
                 android:layout_height="match_parent">
 
                 <ImageView
-                    android:id="@+id/imageView10"
+                    android:id="@+id/imageView13"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/screen_shot_2021_10_25_at_5_05_46_pm" />
+                    android:src="@drawable/screen_shot_2021_10_25_at_4_32_12_pm" />
             </TableRow>
 
             <TableRow
@@ -62,10 +63,10 @@
                 android:layout_height="match_parent">
 
                 <ImageView
-                    android:id="@+id/imageView15"
+                    android:id="@+id/imageView14"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/screen_shot_2021_10_25_at_5_06_01_pm" />
+                    android:src="@drawable/screen_shot_2021_10_25_at_4_32_16_pm" />
             </TableRow>
 
             <TableRow
@@ -73,10 +74,10 @@
                 android:layout_height="17dp">
 
                 <ImageView
-                    android:id="@+id/imageView16"
+                    android:id="@+id/imageView11"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/screen_shot_2021_10_25_at_5_08_51_pm" />
+                    android:layout_height="match_parent"
+                    android:src="@drawable/screen_shot_2021_10_25_at_4_27_56_pm" />
             </TableRow>
 
             <TableRow
@@ -84,10 +85,10 @@
                 android:layout_height="match_parent">
 
                 <ImageView
-                    android:id="@+id/imageView17"
+                    android:id="@+id/imageView12"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/screen_shot_2021_10_25_at_5_08_55_pm" />
+                    android:src="@drawable/screen_shot_2021_10_25_at_4_28_07_pm" />
             </TableRow>
 
             <TableRow

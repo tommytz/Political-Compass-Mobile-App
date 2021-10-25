@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFFFFF"
     tools:context=".MaoriPartyInfo">
 
     <!-- TODO: Update blank fragment layout -->
@@ -26,12 +27,10 @@
                 android:layout_height="290dp">
 
                 <ImageView
-                    android:id="@+id/imageView"
+                    android:id="@+id/imageView3"
                     android:layout_width="wrap_content"
-                    android:layout_height="126dp"
-                    android:layout_marginTop="16dp"
-                    android:padding="10dp"
-                    android:src="@drawable/ic_new_zealand_labour_party_logo" />
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/national_party_logo" />
             </TableRow>
 
             <TableRow
@@ -43,7 +42,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:padding="20dp"
-                    android:text="@string/labourInfo"
+                    android:text="@string/nationalInfor"
                     android:textSize="16sp" />
             </TableRow>
 
@@ -52,32 +51,10 @@
                 android:layout_height="match_parent">
 
                 <ImageView
-                    android:id="@+id/imageView13"
+                    android:id="@+id/imageView19"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/screen_shot_2021_10_25_at_4_32_12_pm" />
-            </TableRow>
-
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" >
-
-                <ImageView
-                    android:id="@+id/imageView14"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/screen_shot_2021_10_25_at_4_32_16_pm" />
-            </TableRow>
-
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="17dp" >
-
-                <ImageView
-                    android:id="@+id/imageView11"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:src="@drawable/screen_shot_2021_10_25_at_4_27_56_pm" />
+                    android:src="@drawable/screen_shot_2021_10_25_at_6_23_18_pm" />
             </TableRow>
 
             <TableRow
@@ -85,15 +62,37 @@
                 android:layout_height="match_parent">
 
                 <ImageView
-                    android:id="@+id/imageView12"
+                    android:id="@+id/imageView20"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/screen_shot_2021_10_25_at_4_28_07_pm" />
+                    android:src="@drawable/screen_shot_2021_10_25_at_6_23_22_pm" />
             </TableRow>
 
             <TableRow
                 android:layout_width="match_parent"
-                android:layout_height="17dp" >
+                android:layout_height="17dp">
+
+                <ImageView
+                    android:id="@+id/imageView21"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/screen_shot_2021_10_25_at_6_23_30_pm" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imageView22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/screen_shot_2021_10_25_at_6_23_34_pm" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="17dp">
 
                 <TextView
                     android:id="@+id/textView4"
